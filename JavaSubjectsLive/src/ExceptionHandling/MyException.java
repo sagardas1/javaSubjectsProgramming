@@ -2,9 +2,9 @@ package ExceptionHandling;
 
 @SuppressWarnings("serial")
 public class MyException extends Exception{
-	int id;
+	String id;
 
-	   public MyException(int x) {
+	   public MyException(String x) {
 	      id = x;
 	   }
 

@@ -1,21 +1,33 @@
 package Serialization;
 
-import java.io.Serializable;
+public class Employee implements Runnable{
+	public int PRINT_NUMBERS_UPTO=10;
+	static int  number=1;
+	int remainder;
+	static Object lock=new Object();
+ 
+	Employee(int remainder)
+	{
+		this.remainder=remainder;
+	}
 
-public class Employee implements Serializable{
-private 	String name;
-private	int age;
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-public int getAge() {
-	return age;
-}
-public void setAge(int age) {
-	this.age = age;
-}
+	static int count=0;
+	@Override
+	public void run() {
+		while (number < PRINT_NUMBERS_UPTO-1) {
+			synchronized (lock) {
+				while (number % 3 != remainder) { 
+					try {
+						lock.wait();
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+				System.out.println(Thread.currentThread().getName() + " " + number);
+				number++;
+				lock.notifyAll();
+			}
+		}
 
-}
+
+}}
