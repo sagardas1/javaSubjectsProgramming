@@ -8,5 +8,11 @@ public abstract class MyabstractClass {
 		return "Sagardas@12345";
 	}
 	
+public static void m1() {
+	System.out.println("sagar");
+}
 
+private void m2() {
+	System.out.println("private");
+}
 }

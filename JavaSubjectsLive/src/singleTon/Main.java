@@ -4,11 +4,16 @@ public class Main {
 	public static void main(String[] args) {
 		
 	
-	MySingleton a =MySingleton.getInstance();
-	MySingleton b=MySingleton.getInstance();
+	Fiveton a =Fiveton.getInstance();
+	Fiveton b=Fiveton.getInstance();
+	Fiveton c=Fiveton.getInstance();
+	Fiveton d=Fiveton.getInstance();
+
+	
 	System.out.println(a.hashCode());
 	System.out.println(b.hashCode());
-	System.out.println(a.equals(b));
+	System.out.println(c.hashCode());
+	System.out.println(d.hashCode());
 	}
 	
 }
