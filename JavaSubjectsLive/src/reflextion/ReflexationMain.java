@@ -18,10 +18,22 @@ public class ReflexationMain {
 			}
 		}
 	}
+	//Access all private fields by using field names.
+	public void printStudentName(Student stud,String name) throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		Field field=stud.getClass().getDeclaredField(name);
+		if(Modifier.isPrivate(field.getModifiers())) {
+			field.setAccessible(true);
+			System.out.println(field.get(stud));
+		}
+		
+	}
 	
-public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException {
+public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
 	ReflexationMain main=new ReflexationMain();
 	Student stud=new Student("sagar", 13);
 	main.printStudent(stud);
+	main.printStudentName(stud, "name");
+	
+	
 }
 }
