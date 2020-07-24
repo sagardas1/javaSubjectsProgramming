@@ -3,7 +3,7 @@ package reflextion;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
-public class ReflexationMain {
+public class ReflexationforVariableMain {
 	
 	//Access all private fields of the class.
 	public void printStudent(Student stud) throws IllegalArgumentException, IllegalAccessException {
@@ -15,6 +15,7 @@ public class ReflexationMain {
 				f.setAccessible(true);
 				
 				System.out.println(f.getName()+" : "+f.get(stud));
+				
 			}
 		}
 	}
@@ -29,7 +30,7 @@ public class ReflexationMain {
 	}
 	
 public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
-	ReflexationMain main=new ReflexationMain();
+	ReflexationforVariableMain main=new ReflexationforVariableMain();
 	Student stud=new Student("sagar", 13);
 	main.printStudent(stud);
 	main.printStudentName(stud, "name");

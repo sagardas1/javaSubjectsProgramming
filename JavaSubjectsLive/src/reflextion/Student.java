@@ -16,6 +16,15 @@ public class Student {
 	}
 	
 	
-	
+	private String method1(String name,int area) {
+		String a="";
+		
+		System.out.println("in this private method. Name is "+name+ " and "+area);
+		return a="in this private method. Name is "+name+ " and "+area;
+		
+	}
 
+	private int method2(int area) {
+		return area;
+	}
 }
