@@ -1,5 +1,7 @@
 package Comparable;
 
+import java.util.Comparator;
+
 public class User implements Comparable<User>{
 
 	private String name;
@@ -21,10 +23,10 @@ public class User implements Comparable<User>{
 		this.rollNo = rollNo;
 	}
 
+	
 	@Override
-	public int compareTo(User o) {
-		
-		if(rollNo>o.getRollNo()) {return -1;}else if(rollNo<o.getRollNo()) {return 1;}else {return 0;}
+	public int compareTo(User o2) {
+		if(rollNo>o2.getRollNo()) {return -1;}else if(rollNo<o2.getRollNo()) {return 1;}else {return 0;}
 		
 	}
 
