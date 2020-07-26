@@ -3,8 +3,12 @@ package SortingHashMAPValues;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import Comparable.User;
@@ -13,27 +17,50 @@ public class MainMethod {
 
 	public static void main(String[] args) {
 		
-		List<User> set=new ArrayList<>();
-		User e=new User();
+		HashMap<String ,Student> map=new  HashMap<>();
+		
+		
+		
+		Student e=new Student();
 		e.setName("sag");
 		e.setRollNo(27);
-		User user=new User();
+		Student user=new Student();
 		user.setName("sq");
 		user.setRollNo(21);
 
-		User user2=new User();
+		Student user2=new Student();
 		user2.setName("sqw");
 		user2.setRollNo(200);
 
-		set.add(e);
-		set.add(user2);
-		set.add(user);
+		map.put("sagar", e);
+		map.put("sa", user);
+		map.put("sag", user2);
 		
-		Collections.sort(set);
 		
-		for(User s:set) {
-			System.out.println(s.getRollNo());
-		}
+		
+		sortmap(map);
+		
 	}
 	
+	
+	public static HashMap<String ,Student> sortmap(HashMap<String ,Student> map){
+		List<Map.Entry<String,Student>> list=new ArrayList<Map.Entry<String,Student>>(map.entrySet());
+		
+		Collections.sort(list,new MapValueComparator() );
+		
+	
+HashMap<String , Student> temp=new LinkedHashMap<String, Student>();
+
+for(Map.Entry<String, Student> m:list) {
+temp.put(m.getKey(), m.getValue());
+
+}		
+	Set<Map.Entry<String, Student>> map3=temp.entrySet();
+	for(Map.Entry<String, Student> m8:map3) {
+		System.out.print(m8.getKey()+"    ");
+		System.out.println(((Student)m8.getValue()).getRollNo());
+	}
+		
+		return null;
+	}
 }
