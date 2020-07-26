@@ -9,6 +9,7 @@ import java.util.TreeSet;
 
 public class Main {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		List<Employee> list = new ArrayList<>();
 		Employee e = new Employee();
