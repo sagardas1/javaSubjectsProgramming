@@ -34,15 +34,19 @@ public class MainMethod {
 		map.put("sa", user);
 		map.put("sag", user2);
 
-		sortmap(map);
+		HashMap<String, Student> m = sortmap(map);
+
+		Set<Map.Entry<String, Student>> map3 = m.entrySet();
+
+		for (Map.Entry<String, Student> m8 : map3) {
+			System.out.print(m8.getKey() + "    ");
+			System.out.println(((Student) m8.getValue()).getRollNo());
+		}
 
 	}
 
 	public static HashMap<String, Student> sortmap(HashMap<String, Student> map) {
-		
-		List<Map.Entry<String, Student>> sort=new ArrayList<Map.Entry<String,Student>>(map.entrySet());
-		
-		
+
 		List<Map.Entry<String, Student>> list = new ArrayList<Map.Entry<String, Student>>(map.entrySet());
 
 		Collections.sort(list, new MapValueComparator());
@@ -54,11 +58,12 @@ public class MainMethod {
 
 		}
 		Set<Map.Entry<String, Student>> map3 = temp.entrySet();
+
 		for (Map.Entry<String, Student> m8 : map3) {
 			System.out.print(m8.getKey() + "    ");
 			System.out.println(((Student) m8.getValue()).getRollNo());
 		}
 
-		return null;
+		return temp;
 	}
 }
