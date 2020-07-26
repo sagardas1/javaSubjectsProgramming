@@ -1,33 +1,41 @@
 package comparetor;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 
 public class Main {
-	
+
 	public static void main(String[] args) {
-TreeSet<Employee> set=new TreeSet<>(new Employee());
-Employee e=new Employee();
-e.setName("saga");
-e.setRoll(1);
-Employee e1=new Employee();
-e1.setName("saga");
-e1.setRoll(2);
-Employee e2=new Employee();
-e2.setName("saga");
-e2.setRoll(5);
-Employee e3=new Employee();
-e3.setName("saga");
-e3.setRoll(0);
-set.add(e);
-set.add(e1);
-set.add(e2);set.add(e3);
-
-for(Employee em:set) {
-	System.out.println(em.getName()+""+em.getRoll());
-}
-
+		List<Employee> list = new ArrayList<>();
+		Employee e = new Employee();
+		e.setName("saga");
+		e.setRoll(1);
+		Employee e1 = new Employee();
+		e1.setName("saga");
+		e1.setRoll(2);
+		Employee e2 = new Employee();
+		e2.setName("saga");
+		e2.setRoll(5);
+		Employee e3 = new Employee();
+		e3.setName("saga");
+		e3.setRoll(0);
+		list.add(e);
+		list.add(e1);
+		list.add(e2);
+		list.add(e3);
+		
+		
+		
+		Collections.sort(list,new AgeComparetor());
+		Iterator itr2=list.iterator();  
+		while(itr2.hasNext()){  
+			Employee st=(Employee)itr2.next();  
+		System.out.println(st.getRoll()+" "+st.getName());  
+		}  
 
 	}
 

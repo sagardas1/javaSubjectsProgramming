@@ -2,7 +2,7 @@ package comparetor;
 
 import java.util.Comparator;
 
-public class Employee implements Comparator {
+public class Employee  {
 	private String name;
 	private int roll;
 
@@ -22,18 +22,8 @@ public class Employee implements Comparator {
 		this.roll = roll;
 	}
 
-	@Override
-	public int compare(Object o1, Object o2) {
-		Employee a1 = (Employee) o1;
-		Employee a2 = (Employee) o2;
-
-		if (a1.getRoll() > a2.getRoll()) {
-			return -10;
-		} else if (a1.getRoll() < a2.getRoll()) {
-			return 10;
-		} else
-			return 0;
-
-	}
+	
+	
+	
 
 }
