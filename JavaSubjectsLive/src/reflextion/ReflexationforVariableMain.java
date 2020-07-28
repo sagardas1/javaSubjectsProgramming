@@ -22,7 +22,7 @@ public class ReflexationforVariableMain {
 	//Access all private fields by using field names.
 	public void printStudentName(Student stud,String name) throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		Field field=stud.getClass().getDeclaredField(name);
-		if(Modifier.isPrivate(field.getModifiers())) {
+		if(Modifier.isPrivate(field. getModifiers())) {
 			field.setAccessible(true);
 			System.out.println(field.get(stud));
 		}
