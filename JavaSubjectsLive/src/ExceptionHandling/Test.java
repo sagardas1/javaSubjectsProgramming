@@ -7,7 +7,7 @@ public static  void div() throws MyException {
 	
 		int b=0;
 		if(b==0) {
-			throw  new MyException("DFGHJK");}
+			throw  new MyException("");}
 		}
 
 public static void main(String[] args) {
