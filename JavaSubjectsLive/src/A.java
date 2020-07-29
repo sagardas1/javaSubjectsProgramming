@@ -25,7 +25,7 @@ public class A {
 		map.put("sag", user2);
 		
 		
-		List<Map.Entry<String, Student>> list=new ArrayList<>(map.entrySet());
+		ArrayList<Map.Entry<String, Student>> list=new ArrayList<>(map.entrySet());
 		Collections.sort(list,new AgeComapretor());
 		HashMap<String ,Student> temp=new LinkedHashMap<>();
 		for(Map.Entry<String, Student> en:list) {
