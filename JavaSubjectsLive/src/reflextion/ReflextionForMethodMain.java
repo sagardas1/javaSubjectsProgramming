@@ -30,7 +30,10 @@ public class ReflextionForMethodMain {
 	
 	public void readMethod(Student student,String method) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		
-		Method method2=student.getClass().getDeclaredMethod(method);
+		Method method2=null;
+
+		
+		
 		if(Modifier.isPrivate(method2.getModifiers())) {
 			Object[] args= {student.getName(),student.getArea()};
 			method2.setAccessible(true);
