@@ -3,9 +3,7 @@ package HashMapSyncronised;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.*;
-
-import castinInJava.Main;
+import java.util.Set;
 
 public class HashMapSyncronize {
 public static void main(String[] args) {
