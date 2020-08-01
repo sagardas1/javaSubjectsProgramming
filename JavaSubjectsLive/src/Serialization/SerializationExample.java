@@ -1,20 +1,32 @@
 package Serialization;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
 public class SerializationExample {
 
 			
-	public static void main(String[] args) throws InterruptedException {
-		Employee runnable1=new Employee(1);
-		Employee runnable2=new Employee(2);
-		Employee runnable3=new Employee(0);
+	public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException {
 		
-		Thread t1=new Thread(runnable1,"T1");
-		Thread t2=new Thread(runnable2,"T2");
-		Thread t3=new Thread(runnable3,"T3");
+		Employee obj=new Employee();
+		obj.setName("sagar das");
+		obj.setRollNo(12);
+		obj.setContactInfo("8908273414");
 		
-		t1.start();
-		t2.start();
-		t3.start();	  
+		FileOutputStream fileOutputStream=new FileOutputStream("Users/sagardas/Desktop/git");
+		ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
+		
+		objectOutputStream.writeObject(obj);
+		
+		
+		FileInputStream fileInputStream=new FileInputStream("Users/sagardas/Desktop/git");
+		ObjectInputStream objectInputStream=new ObjectInputStream(fileInputStream);
+		
+	Employee employee=(Employee)	objectInputStream.readObject();
 		
 	}
 
