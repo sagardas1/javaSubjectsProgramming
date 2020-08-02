@@ -23,8 +23,10 @@ public class CustomeAnnotation {
 		CustomeAnnotation customeAnnotation=new CustomeAnnotation("Nokia", 5);
 		System.out.println(customeAnnotation.brand);
 		
+		@SuppressWarnings("rawtypes")
 		Class a=customeAnnotation.getClass();
 		
+		@SuppressWarnings("unchecked")
 		Annotation annotation=a.getAnnotation(smartPhone.class);
 		
 		smartPhone s=(smartPhone)annotation;
