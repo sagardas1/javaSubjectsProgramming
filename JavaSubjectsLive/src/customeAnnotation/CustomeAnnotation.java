@@ -1,7 +1,17 @@
 package customeAnnotation;
 
 import java.lang.annotation.Annotation;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
+@Inherited
+@Documented
+@Target(ElementType.TYPE)//target (type) means it works on class level
+@Retention(RetentionPolicy.RUNTIME)
 @interface smartPhone {
 	String os() default "ios";
 
@@ -9,7 +19,7 @@ import java.lang.annotation.Annotation;
 
 }
 
-@smartPhone
+@smartPhone(os="IOS",version=89)
 public class CustomeAnnotation {
 	String brand;
 	int size;
@@ -20,19 +30,18 @@ public class CustomeAnnotation {
 	}
 	
 	public static void main(String[] args) {
-		CustomeAnnotation customeAnnotation=new CustomeAnnotation("Nokia", 5);
-		System.out.println(customeAnnotation.brand);
+		
+		CustomeAnnotation annotation=new CustomeAnnotation("nokia",12);
+		
 		
 		@SuppressWarnings("rawtypes")
-		Class a=customeAnnotation.getClass();
+		Class s=annotation.getClass();
 		
 		@SuppressWarnings("unchecked")
-		Annotation annotation=a.getAnnotation(smartPhone.class);
-		
-		smartPhone s=(smartPhone)annotation;
-		
-		System.out.println(s.os());
-		
+		Annotation annotation2=s.getAnnotation(smartPhone.class);
+		smartPhone class1=(smartPhone)annotation2;
+		System.out.println(class1.os());
+		System.out.println(class1.version());
 		
 	}
 
