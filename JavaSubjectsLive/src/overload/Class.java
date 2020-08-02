@@ -10,12 +10,12 @@ public class Class {
 		return "sagar";
 	}
 	
-	final static char m1(int a,int b,int c) {
+	final  char m1(int a,int b,int c) {
 		return 'c';
 	}
 	
 	
-	public static void main(String[] args) {
+	public  void main(String[] args) {
 		Class class1=new Class();
 	}
 }
