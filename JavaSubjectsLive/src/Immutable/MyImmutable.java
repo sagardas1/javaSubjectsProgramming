@@ -15,6 +15,7 @@ public final class MyImmutable {
 		return a;
 	}
 
+	@SuppressWarnings("unchecked")
 	public ArrayList<String> getAddress() {
 		return (ArrayList<String>) address.clone();
 	}
