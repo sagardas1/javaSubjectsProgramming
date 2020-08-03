@@ -1,14 +1,14 @@
 package ExceptionHandling;
 
 @SuppressWarnings("serial")
-public class MyException extends Exception{
+public class MyException1 extends Exception{
 	String id;
 
-	   public MyException(String x) {
+	   public MyException1(String x) {
 	      id = x;
 	   }
 
-	   public String toString() {
+	   public String getMessage1() {
 	      return "CustomException[" + id + "]";
 	   }
 }
