@@ -6,6 +6,7 @@ public class Class {
 		return 10*a;
 	}
 
+	@SuppressWarnings("unused")
 	private static String m1(int a,int b) {
 		return "sagar";
 	}
@@ -16,6 +17,7 @@ public class Class {
 	
 	
 	public  void main(String[] args) {
+		@SuppressWarnings("unused")
 		Class class1=new Class();
 	}
 }
