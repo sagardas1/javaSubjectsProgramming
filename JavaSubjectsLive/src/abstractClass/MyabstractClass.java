@@ -12,6 +12,7 @@ public static void m1() {
 	System.out.println("sagar");
 }
 
+@SuppressWarnings("unused")
 private void m2() {
 	System.out.println("private");
 }

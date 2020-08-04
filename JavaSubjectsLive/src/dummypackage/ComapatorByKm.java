@@ -3,7 +3,7 @@ package dummypackage;
 import java.util.*;
 import java.util.Map.Entry;
 
-public class ComapatorByKm implements Comparator{
+public class ComapatorByKm implements Comparator<Object>{
 
 	@Override
 	public int compare(Object o1, Object o2) {
