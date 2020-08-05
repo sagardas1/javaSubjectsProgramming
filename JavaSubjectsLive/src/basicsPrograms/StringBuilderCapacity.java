@@ -12,6 +12,10 @@ public class StringBuilderCapacity {
 		
 		StringBuilder s1=new StringBuilder();
 		System.out.println(s1.capacity());
+	
+		
+		StringBuffer s2=new StringBuffer();
+		System.out.println(s2.capacity());
 	}
 
 }
