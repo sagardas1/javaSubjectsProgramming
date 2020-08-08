@@ -15,6 +15,7 @@ import Comparable.User;
 
 public class MainMethod {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 
 		HashMap<String, Student> map = new HashMap<>();
