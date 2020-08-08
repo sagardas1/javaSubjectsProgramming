@@ -8,6 +8,7 @@ public class Test2 {
 		ClassLoader classLoader = Bike.class.getClassLoader();
 
 		try {
+			@SuppressWarnings("rawtypes")
 			Class aClass = classLoader.loadClass("dynamicLoading.Bike");
 			System.out.println("aClass.getName() = " + aClass.getName());
 
