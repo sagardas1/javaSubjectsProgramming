@@ -1,14 +1,19 @@
 
 public class Example {
 	
-	
+	public static void m1() throws MyExceptionProvide {
+		int b=0;
+		if(b==0) {
+		
+	throw new MyExceptionProvide("b cant be zero");
+		}
+	}
 	
 public static void main(String[] args) {
-	@SuppressWarnings("unused")
-	String a="sagar das";
-	@SuppressWarnings("unused")
-	String b="sidharth";
-	@SuppressWarnings("unused")
-	String c="sagar das";
+	try {
+		m1();
+	} catch (MyExceptionProvide e) {
+		e.getMessage1();
+	}
 }
 }
