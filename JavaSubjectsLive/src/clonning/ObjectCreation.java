@@ -7,6 +7,7 @@ public static void main(String[] args) throws CloneNotSupportedException {
 	employee.setName("sagar das");
 	employee.setRollNo(13);
 	
+@SuppressWarnings("unused")
 Employee employee2=	(Employee) employee.clone();
 }
 }
