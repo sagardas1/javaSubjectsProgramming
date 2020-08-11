@@ -7,7 +7,6 @@ public static void main(String[] args) {
 	System.out.println(a);
 	
 	//or
-	int size=a.length();
 	String newString="";
 	
 for(char k:a.toCharArray()) {
