@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	map.put("sagar", 1);
 	map.put("sidharth", 2);
 	
-	Map m=Collections.synchronizedMap(map);
+	Map<String, Integer> m=Collections.synchronizedMap(map);
 	
 	Set<Map.Entry<String, Integer>> e=m.entrySet();
 	for(Map.Entry<String, Integer> e1:e) {
