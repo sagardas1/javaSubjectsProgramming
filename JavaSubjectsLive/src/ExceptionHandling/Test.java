@@ -2,6 +2,7 @@ package ExceptionHandling;
 
 public class Test {
 public static  void div() throws MyException1 {
+	@SuppressWarnings("unused")
 	final int a;
 	a=10;
 	
