@@ -1,11 +1,7 @@
 package failfastandfailsafe;
 
-import java.util.*;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class FailFastandFailSafe {
 
@@ -15,7 +11,7 @@ public class FailFastandFailSafe {
 		a.add("Sagar das");
 		a.add("sidharth das");
 
-		for (String s : a) {
+		for (@SuppressWarnings("unused") String s : a) {
 			a.remove("Sagar das");
 		}
 
