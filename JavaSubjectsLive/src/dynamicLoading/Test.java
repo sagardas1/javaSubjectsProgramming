@@ -1,9 +1,7 @@
 package dynamicLoading;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Test {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 		//two ways to load class dynamically
 		
@@ -14,6 +12,7 @@ public class Test {
 		
 		
 		
+		@SuppressWarnings("rawtypes")
 		Class a=Bike.class;
 		Bike bike=(Bike) a.newInstance();
 	
