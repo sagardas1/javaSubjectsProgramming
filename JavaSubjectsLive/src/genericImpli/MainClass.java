@@ -29,11 +29,22 @@ public class MainClass<T, V> {
 		
 		System.out.println(new Gson().toJson(address2));
 
+		
+		Object u=new Object();
+		
+		if(u.getClass().isInstance(Object.class)) {
+			System.out.println("gvdshgfvs");
+		}
 	}
 
 	// generic methods
 	@SuppressWarnings("unchecked")
 	public T m1(V v) {
+		
+		
+		if(Employee.class.isInstance(v)) {
+			System.out.println("pass");
+		}
 		Address address = new Address();
 address.setCity("sai");
 address.setCityId(12);
