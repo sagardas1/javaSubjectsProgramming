@@ -2,7 +2,7 @@ package comparetor;
 
 import java.util.Comparator;
 
-public class AgeComparetor implements Comparator {
+public class AgeComparetor implements Comparator<Object> {
 
 	@Override
 	public int compare(Object o1, Object o2) {

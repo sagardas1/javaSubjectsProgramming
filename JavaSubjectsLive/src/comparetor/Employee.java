@@ -1,7 +1,5 @@
 package comparetor;
 
-import java.util.Comparator;
-
 public class Employee  {
 	private String name;
 	private int roll;
