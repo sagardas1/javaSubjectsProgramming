@@ -2,6 +2,7 @@ package nullCheckInObject;
 
 public class Animal {
 	
+	@SuppressWarnings("null")
 	public static void main(String[] args) {
 		Animal animal=null;
 		if(animal==null) {
