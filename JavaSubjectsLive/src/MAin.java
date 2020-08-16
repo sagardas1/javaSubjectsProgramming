@@ -6,6 +6,7 @@ public class MAin {
 		
 	}
 
+	@SuppressWarnings("unused")
 	private static void m1(Object object) {
 	System.out.println("object");
 		
