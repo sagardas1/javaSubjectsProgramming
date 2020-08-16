@@ -1,7 +1,6 @@
 package basicsPrograms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class OddEvrnSegregate {
 	
