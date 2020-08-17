@@ -16,6 +16,7 @@ public class Student {
 	}
 	
 	
+	@SuppressWarnings("unused")
 	private String method1(String name,int area) {
 		String a="";
 		
@@ -24,6 +25,7 @@ public class Student {
 		
 	}
 
+	@SuppressWarnings("unused")
 	private int method2(int area) {
 		return area;
 	}
