@@ -2,7 +2,7 @@ package Sorting;
 
 import java.util.Comparator;
 
-public class QuickSort implements Comparator{
+public class QuickSort implements Comparator<Object>{
 	QuickSort(String name,
 	int  redgeno){this.name=name;
 	this.redgeno=redgeno;}
