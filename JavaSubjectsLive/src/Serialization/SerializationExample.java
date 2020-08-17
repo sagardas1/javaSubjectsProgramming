@@ -1,7 +1,6 @@
 package Serialization;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -18,14 +17,17 @@ public class SerializationExample {
 		obj.setContactInfo("8908273414");
 		
 		FileOutputStream fileOutputStream=new FileOutputStream("Users/sagardas/Desktop/git");
+		@SuppressWarnings("resource")
 		ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
 		
 		objectOutputStream.writeObject(obj);
 		
 		
 		FileInputStream fileInputStream=new FileInputStream("Users/sagardas/Desktop/git");
+		@SuppressWarnings("resource")
 		ObjectInputStream objectInputStream=new ObjectInputStream(fileInputStream);
 		
+	@SuppressWarnings("unused")
 	Employee employee=(Employee)	objectInputStream.readObject();
 		
 	}
