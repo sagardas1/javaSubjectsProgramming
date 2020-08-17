@@ -16,6 +16,7 @@ public class ReflextionForMethodMain {
 			
 			m.setAccessible(true);
 			Parameter[] i=m.getParameters();
+	@SuppressWarnings("unused")
 	String s=		i[0].toString();
 			Object[] args= i;
 			
@@ -28,6 +29,7 @@ public class ReflextionForMethodMain {
 	}
 	
 	
+	@SuppressWarnings("null")
 	public void readMethod(Student student,String method) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		
 		Method method2=null;
