@@ -7,6 +7,7 @@ public class Syncronise {
 	Thread thread=new Thread(myThread1);
 	thread.start();
 	
+	@SuppressWarnings("unused")
 	MyThread myThread2=new MyThread();
 	Thread thread2=new Thread(myThread1);
 	thread2.start();
