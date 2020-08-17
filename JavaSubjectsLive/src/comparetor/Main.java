@@ -30,7 +30,7 @@ public class Main {
 		
 		
 		Collections.sort(list,new AgeComparetor());
-		Iterator itr2=list.iterator();  
+		Iterator<Employee> itr2=list.iterator();  
 		while(itr2.hasNext()){  
 			Employee st=(Employee)itr2.next();  
 		System.out.println(st.getRoll()+" "+st.getName());  
