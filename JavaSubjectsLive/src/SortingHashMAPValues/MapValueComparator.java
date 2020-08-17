@@ -4,12 +4,14 @@ import java.util.Comparator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class MapValueComparator implements Comparator{
+public class MapValueComparator implements Comparator<Object>{
 
 	@Override
 	public int compare(Object o1, Object o2) {
 
+		@SuppressWarnings("unchecked")
 		Map.Entry<String, Student> m1=(Entry<String, Student>) o1;
+		@SuppressWarnings("unchecked")
 		Map.Entry<String, Student> m2=(Entry<String, Student>) o2;
 		
 		Student s1=m1.getValue();
