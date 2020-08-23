@@ -1,6 +1,8 @@
 package streamApi;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -22,7 +24,13 @@ public static void main(String[] args) {
 	@SuppressWarnings("unused")
 	Set<Map.Entry<EmployeeCase, Integer>> entrySet=map.entrySet();
 	
+	List<EmployeeCase> list=new ArrayList<>();
 	
+	list.add(case1);
+	list.add(case2);
+	
+	
+	//list.stream().filter(()->)
 	
 	
 	
