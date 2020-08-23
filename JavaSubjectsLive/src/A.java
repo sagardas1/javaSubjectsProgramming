@@ -1,9 +1,3 @@
-import java.util.*;
-
-import SortingHashMAPValues.Student;
-
-
-
 public class A {
 
 	public static void main(String[] args) {
@@ -12,7 +6,8 @@ public class A {
 		
 		
         int countFirst=0;
-        int countlast=0;
+        @SuppressWarnings("unused")
+		int countlast=0;
 String[] a=name.split(" ");
 
 
