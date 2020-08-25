@@ -11,6 +11,7 @@ public class Animal {
 		if(animal.equals(null)) {
 			System.out.println("hsbhsg");
 		}
+		
 	}
 
 }
