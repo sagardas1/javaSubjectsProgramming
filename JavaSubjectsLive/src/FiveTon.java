@@ -1,16 +1,17 @@
 
 public class FiveTon {
-	
-public static FiveTon obj=null;
 
-private FiveTon() {}
+	public static FiveTon obj = null;
 
-public FiveTon getInstance() {
-	if(obj==null) {
-		obj=new FiveTon();
-		
+	private FiveTon() {
 	}
-	return obj;
-}
+
+	public FiveTon getInstance() {
+		if (obj == null) {
+			obj = new FiveTon();
+
+		}
+		return obj;
+	}
 
 }
