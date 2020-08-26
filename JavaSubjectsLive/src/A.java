@@ -1,26 +1,27 @@
+import java.util.*;
+import java.util.List;
+
+import java.lang.Throwable;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class A {
 
-	public static void main(String[] args) {
-	
-		String name="1000000001 1000000002 1000000003 1000000004 1000000005";
-		
-		
-        int countFirst=0;
-        @SuppressWarnings("unused")
-		int countlast=0;
-String[] a=name.split(" ");
-
-
-for(String str:a){
-	char c =str.charAt(0);
-int i=Integer.valueOf(c+"");
-	
-	countFirst+=i;
-    
-    
+static class Helper{
+	private int data =5;
+	public void bump(int inc) 
+	{inc++;
+	data=data+inc;}
 }
-System.out.println(countFirst);
+	
+	public static void main(String[] args) {
+
+		Helper helper=new Helper();
+		int data=2;
+		helper.bump(data);
+		System.out.println(helper.data);
+		
 		
 	}
-	
+
 }
