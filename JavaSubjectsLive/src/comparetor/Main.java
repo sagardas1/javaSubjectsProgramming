@@ -7,7 +7,6 @@ import java.util.List;
 
 public class Main {
 
-
 	public static void main(String[] args) {
 		List<Employee> list = new ArrayList<>();
 		Employee e = new Employee();
@@ -26,15 +25,13 @@ public class Main {
 		list.add(e1);
 		list.add(e2);
 		list.add(e3);
-		
-		
-		
-		Collections.sort(list,new AgeComparetor());
-		Iterator<Employee> itr2=list.iterator();  
-		while(itr2.hasNext()){  
-			Employee st=(Employee)itr2.next();  
-		System.out.println(st.getRoll()+" "+st.getName());  
-		}  
+
+		Collections.sort(list, new AgeComparetor());
+		Iterator<Employee> itr2 = list.iterator();
+		while (itr2.hasNext()) {
+			Employee st = (Employee) itr2.next();
+			System.out.println(st.getRoll() + " " + st.getName());
+		}
 
 	}
 
