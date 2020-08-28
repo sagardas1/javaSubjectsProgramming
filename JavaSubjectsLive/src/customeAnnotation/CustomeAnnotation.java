@@ -10,18 +10,16 @@ import java.lang.annotation.Target;
 
 @Inherited
 @Documented
-@Target(ElementType.TYPE)//target (type) means it works on class level
+@Target(ElementType.TYPE) // target (type) means it works on class level
 @Retention(RetentionPolicy.RUNTIME)
 @interface smartPhone {
 	String os() default "ios";
 
 	double version() default 13.1;
-	
-	
 
 }
 
-@smartPhone(os="IOS",version=89)
+@smartPhone(os = "IOS", version = 89)
 public class CustomeAnnotation {
 	String brand;
 	int size;
@@ -30,21 +28,20 @@ public class CustomeAnnotation {
 		this.brand = brand;
 		this.size = size;
 	}
-	
+
 	public static void main(String[] args) {
-		
-		CustomeAnnotation annotation=new CustomeAnnotation("nokia",12);
-		
-		
+
+		CustomeAnnotation annotation = new CustomeAnnotation("nokia", 12);
+
 		@SuppressWarnings("rawtypes")
-		Class s=annotation.getClass();
-		
+		Class s = annotation.getClass();
+
 		@SuppressWarnings("unchecked")
-		Annotation annotation2=s.getAnnotation(smartPhone.class);
-		smartPhone class1=(smartPhone)annotation2;
+		Annotation annotation2 = s.getAnnotation(smartPhone.class);
+		smartPhone class1 = (smartPhone) annotation2;
 		System.out.println(class1.os());
 		System.out.println(class1.version());
-		
+
 	}
 
 }
