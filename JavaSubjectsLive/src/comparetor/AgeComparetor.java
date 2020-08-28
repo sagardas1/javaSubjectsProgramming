@@ -18,6 +18,5 @@ public class AgeComparetor implements Comparator<Object> {
 			return 0;
 		}
 
-	}
+	}}
 
-}
