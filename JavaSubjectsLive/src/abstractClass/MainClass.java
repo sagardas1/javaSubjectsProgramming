@@ -7,7 +7,6 @@ public class MainClass {
 		System.out.println(class1.getPassword());
 		class1.getName();
 		class1.m1();
-		// class1.m2();
 	}
 
 }
