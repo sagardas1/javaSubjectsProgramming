@@ -6,7 +6,7 @@ public class RemoveAllWhiteSpace {
 		a = a.replace(" ", "");
 		System.out.println(a);
 
-		// or
+	
 		String newString = "";
 
 		for (char k : a.toCharArray()) {
