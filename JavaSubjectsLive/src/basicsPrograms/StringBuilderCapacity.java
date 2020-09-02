@@ -6,6 +6,7 @@ public class StringBuilderCapacity {
 		StringBuilder s = new StringBuilder("sagar Das");
 
 		s.append('f');
+		s.append('f');
 		System.out.println(s);
 		System.out.println(s.capacity());
 
