@@ -3,6 +3,7 @@
 public class MyExceptionProvide extends Exception {
 
 	String name;
+	
 
 	MyExceptionProvide(String name) {
 		this.name = name;
