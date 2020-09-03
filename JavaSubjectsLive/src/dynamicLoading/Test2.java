@@ -6,7 +6,6 @@ public class Test2 {
 		// dynamically load class.
 
 		ClassLoader classLoader = Bike.class.getClassLoader();
-
 		try {
 			@SuppressWarnings("rawtypes")
 			Class aClass = classLoader.loadClass("dynamicLoading.Bike");
