@@ -11,7 +11,6 @@ public class Test {
 		b.ride();
 		
 		
-		
 		@SuppressWarnings("rawtypes")
 		Class a=Bike.class;
 		Bike bike=(Bike) a.newInstance();
