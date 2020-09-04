@@ -10,8 +10,7 @@ public class Wrapper {
 		} else {
 			System.out.println("not");
 		}
-		
-		
+
 		if (a.equals(b)) {
 			System.out.println("equals");
 		} else {
