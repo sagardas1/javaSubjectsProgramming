@@ -1,7 +1,5 @@
 package bst1;
 
-import castinInJava.Main;
-
 class Node{
 	Node right;
 	Node left;
