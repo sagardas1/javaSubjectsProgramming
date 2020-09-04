@@ -21,6 +21,8 @@ public class BSTApp {
 		
 		bst.inOrder(root);
 		
+		bst.preOrder(root);
+		
 	}
 	
 	
@@ -40,6 +42,16 @@ class BST{
 			root.right=insert(root.right, i);
 		}
 		return root;
+	}
+
+	public void preOrder(Node root) {
+	if(root==null) {
+		return;
+		
+	}
+	System.out.print (root.data+" ");
+	preOrder(root.left);
+	preOrder(root.right);
 	}
 
 	public void inOrder(Node root) {
