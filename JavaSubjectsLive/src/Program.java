@@ -5,7 +5,6 @@ public class Program {
 	
 	public static void main(String[] args) {
 		String s1[]= {"to","toes","dog","dogs","book","banana"};
-		String name;
 		int maxLength=0;
 		
 		String input="osetdg";
