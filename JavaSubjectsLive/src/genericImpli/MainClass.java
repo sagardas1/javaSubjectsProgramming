@@ -26,13 +26,12 @@ public class MainClass<T, V> {
 		employee2.setRollNo(11);
 		@SuppressWarnings("unused")
 		Address address2 = a.m1(employee2);
-		
+
 		System.out.println(new Gson().toJson(address2));
 
-		
-		Object u=new Object();
-		
-		if(u.getClass().isInstance(Object.class)) {
+		Object u = new Object();
+
+		if (u.getClass().isInstance(Object.class)) {
 			System.out.println("gvdshgfvs");
 		}
 	}
@@ -40,15 +39,14 @@ public class MainClass<T, V> {
 	// generic methods
 	@SuppressWarnings("unchecked")
 	public T m1(V v) {
-		
-		
-		if(Employee.class.isInstance(v)) {
+
+		if (Employee.class.isInstance(v)) {
 			System.out.println("pass");
 		}
 		Address address = new Address();
-address.setCity("sai");
-address.setCityId(12);
-address.setPincode(123);
+		address.setCity("sai");
+		address.setCityId(12);
+		address.setPincode(123);
 		return (T) address;
 	}
 }
