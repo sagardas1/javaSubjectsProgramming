@@ -8,6 +8,7 @@ public class MyMethodReference {
 		in.say();
 
 		A a = new A();
+		@SuppressWarnings("unused")
 		MyMethodReferanceInterface i = a::method1;
 
 	}
