@@ -17,11 +17,13 @@ public class BST {
 		root = b.insert(root, 7);
 		root = b.insert(root, 7);
 		root = b.insert(root, 4);
-		root = b.insert(root,5);
-		
-		
-		
+		root = b.insert(root, 5);
+
 		b.inOrder(root);
+		System.out.println("--------------------------------");
+		b.preOrder(root);
+		System.out.println("--------------------------------");
+		b.postOrder(root);
 	}
 
 }
@@ -44,15 +46,36 @@ class BinarySearch {
 		return root;
 	}
 
-	public void inOrder(Node root) {
-		if(root==null) {
+	public void postOrder(Node root) {
+		if (root == null) {
 			return;
 		}
-		
+
 		inOrder(root.left);
-		System.out.println(root.data);
 		inOrder(root.right);
-		
+		System.out.print(root.data + " ");
+	}
+
+	public void preOrder(Node root) {
+		if (root == null) {
+			return;
+		}
+		System.out.print(root.data + " ");
+		inOrder(root.left);
+
+		inOrder(root.right);
+
+	}
+
+	public void inOrder(Node root) {
+		if (root == null) {
+			return;
+		}
+
+		inOrder(root.left);
+		System.out.print(root.data + " ");
+		inOrder(root.right);
+
 	}
 
 	private Node createNewNode(int i) {
