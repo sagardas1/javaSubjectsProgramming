@@ -14,7 +14,6 @@ public class BSTApp {
 		root = bst.insert(root, 10);
 		root = bst.insert(root, 1);
 		root = bst.insert(root, 2);
-		root = bst.insert(root, 6);
 
 		root = bst.insert(root, 4);
 		root = bst.insert(root, 4);
