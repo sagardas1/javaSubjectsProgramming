@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class MainMethod {
 
-
 	public static void main(String[] args) {
 
 		HashMap<String, Student> map = new HashMap<>();
@@ -27,20 +26,14 @@ public class MainMethod {
 		map.put("sagar", e);
 		map.put("sa", user);
 		map.put("sag", user2);
-		
-		
-		List<Map.Entry<String, Student>> list=new ArrayList<Map.Entry<String,Student>>(map.entrySet());
-		
-		
-		Collections.sort(list, new MapValueComparator());
-		
 
-		
-		for(Map.Entry<String, Student> e1:list) {
-			Student student=e1.getValue();
+		List<Map.Entry<String, Student>> list = new ArrayList<Map.Entry<String, Student>>(map.entrySet());
+
+		Collections.sort(list, new MapValueComparator());
+
+		for (Map.Entry<String, Student> e1 : list) {
+			Student student = e1.getValue();
 			System.out.println(student.getRollNo());
 		}
 	}
-	}
-
-	
+}
