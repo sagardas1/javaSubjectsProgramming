@@ -18,5 +18,4 @@ public class Child extends ParentClass {
 		System.out.println(child.a);
 		child.m1();
 	}
-
 }
