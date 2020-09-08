@@ -10,11 +10,11 @@ public class Mystream {
 	public static void main(String[] args) {
 		Map<EmployeeCase, Integer> map = new HashMap<>();
 
-		EmployeeCase case1 = new EmployeeCase();
+		EmployeeCase case1 = new EmployeeCase(null, 0);
 		case1.setName("sagar das");
 		case1.setRedge(12);
 
-		EmployeeCase case2 = new EmployeeCase();
+		EmployeeCase case2 = new EmployeeCase(null, 0);
 		case2.setName("Sidharth Das");
 		case2.setRedge(11);
 
