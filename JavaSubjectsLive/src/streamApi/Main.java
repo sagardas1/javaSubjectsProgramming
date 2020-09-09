@@ -15,6 +15,7 @@ public static void main(String[] args) {
 	EmployeeCase case4=new EmployeeCase("syan",66);
 	EmployeeCase case6=new EmployeeCase("aman",77);
 	EmployeeCase case7=new EmployeeCase("piya",88);
+	EmployeeCase case8=new EmployeeCase("dak",2);
 	
 	List<EmployeeCase> list=new ArrayList<EmployeeCase>();
 	list.add(case7);
@@ -24,10 +25,12 @@ public static void main(String[] args) {
 	list.add(case3);
 	list.add(case2);
 	list.add(case1);
+	list.add(case8);
 	
 	
-	List<EmployeeCase> list1=	list.stream().filter(p ->(p.getName().equals("dak")||p.getName().equals("void")))
-			.collect(Collectors.toList());
+	
+	EmployeeCase list1=	(EmployeeCase) list.stream().filter(p ->(p.getName().equals("dak")))
+;
 	
 	System.out.println(new Gson().toJson(list1));
 }
