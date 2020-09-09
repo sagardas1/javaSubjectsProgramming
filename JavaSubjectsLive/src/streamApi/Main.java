@@ -29,7 +29,7 @@ public static void main(String[] args) {
 	
 	
 	
-	EmployeeCase list1=	(EmployeeCase) list.stream().filter(p ->(p.getName().equals("dak")))
+	List<EmployeeCase> list1=	 (List<EmployeeCase>) list.stream().filter(p ->(p.getName().equals("dak")))
 ;
 	
 	System.out.println(new Gson().toJson(list1));
