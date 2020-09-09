@@ -27,6 +27,7 @@ public class Main {
 		list.add(case1);
 		list.add(case8);
 
+		@SuppressWarnings("unchecked")
 		List<EmployeeCase> list1 = (List<EmployeeCase>) list.stream().filter(p -> (p.getName().equals("dak")));
 
 		System.out.println(new Gson().toJson(list1));
