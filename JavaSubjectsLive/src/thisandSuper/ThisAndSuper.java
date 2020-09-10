@@ -1,8 +1,8 @@
 package thisandSuper;
 
-public class ThisAndSuper extends Super1{
+public class ThisAndSuper extends Super1 {
 	int a;
-	
+
 	int b;
 
 	public ThisAndSuper(int a, int b) {
@@ -12,7 +12,7 @@ public class ThisAndSuper extends Super1{
 	}
 
 	public static void main(String[] args) {
-		ThisAndSuper andSuper=new ThisAndSuper(10, 20);
+		ThisAndSuper andSuper = new ThisAndSuper(10, 20);
 		System.out.println(andSuper.a);
 	}
 }
