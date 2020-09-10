@@ -8,9 +8,7 @@ public class Child extends ParentClass {
 	Child(int a, int b) {
 		super(100, 200);
 		this.a = a;
-
 		this.b = b;
-
 	}
 
 	public static void main(String[] args) {
