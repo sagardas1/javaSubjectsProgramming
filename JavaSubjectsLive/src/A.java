@@ -20,10 +20,8 @@ public class A {
 	public static void main(String[] args) {
 
 		int a[] = { 1, 2, 3, 2 };
-		
-		
-		//List<Integer> li = Arrays.stream(a).collect(supplier, accumulator, combiner)
-				
+
+		// List<Integer> li = Arrays.stream(a).collect(supplier, accumulator, combiner)
 
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 56);
 		System.out.println(new Gson().toJson(list));
