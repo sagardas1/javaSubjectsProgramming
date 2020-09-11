@@ -16,6 +16,7 @@ public class A {
 
 	public static void main(String[] args) {
 
+		@SuppressWarnings("unused")
 		int a[] = { 1, 2, 3, 2 };
 
 		// List<Integer> li = Arrays.stream(a).collect(supplier, accumulator, combiner)
