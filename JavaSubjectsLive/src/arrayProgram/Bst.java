@@ -13,6 +13,8 @@ public class Bst {
 		
 		
 		binarySearch.inOrder(root);
+		root=binarySearch.delete(root,10);
+		
 		
 	}
 
@@ -33,6 +35,42 @@ public class Bst {
 		return root;
 	}
 
+	public Node delete(Node root, int i) {
+		if(root==null) {
+			return null;
+		}
+		
+		if(i<root.data) {
+		root.left=	delete(root.left, i);
+		}else if(i>root.data) {
+			root.right=delete(root.right, i);
+		}else {
+			if(root.left==null || root.right==null) {
+				Node temp=null;
+				temp=root.left==null?root.right :root.left;
+				
+				if(temp==null) {
+					return null;
+				}else {
+					return temp;
+				}
+			}else {
+				Node successor=getSuccessor(root);
+			}
+		}
+		return null;
+	}
+
+	
+
+	private Node getSuccessor(Node root) {
+		if(root==null) {
+			return null;
+		}
+	
+		return null;
+	}
+
 	public void inOrder(Node root) {
 		if(root==null) {
 			return;
@@ -42,6 +80,8 @@ public class Bst {
 		inOrder(root.left);
 		System.out.println(root.data);
 		inOrder(root.right);
+		
+	
 		
 	}
 
