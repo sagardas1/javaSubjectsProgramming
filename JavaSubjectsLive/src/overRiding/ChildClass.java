@@ -21,5 +21,9 @@ public class ChildClass extends ParentClass {
 		System.out.println("m3() child class");
 		return null;
 	}
+	
+//	private void m6() {
+		
+	//}
 
 }
