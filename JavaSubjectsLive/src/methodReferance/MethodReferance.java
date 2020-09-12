@@ -1,7 +1,7 @@
 package methodReferance;
 
 public class MethodReferance {
-static	void saysomething() {
+	static void saysomething() {
 		System.out.println("Say somethig");
 	}
 
