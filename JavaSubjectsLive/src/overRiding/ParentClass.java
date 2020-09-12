@@ -2,7 +2,6 @@ package overRiding;
 
 import java.nio.file.FileAlreadyExistsException;
 
-import inheritance.Animal;
 import inheritance.Dog;
 
 public class ParentClass {
