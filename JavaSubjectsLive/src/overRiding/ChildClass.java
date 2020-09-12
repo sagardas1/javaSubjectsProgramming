@@ -5,25 +5,20 @@ import java.nio.file.FileAlreadyExistsException;
 import inheritance.Animal;
 import inheritance.Dog;
 
-public class ChildClass extends ParentClass {
-
-	ChildClass() {
-		System.out.println("dhsvfg");
-	}
-
-	@Override
-	protected void m1() throws FileAlreadyExistsException{
-		System.out.println("m1() child class");
-	}
-
-	@Override
-	public Dog m3() {
-		System.out.println("m3() child class");
-		return null;
-	}
+public class ChildClass  {
 	
-//	private void m6() {
+	
+	public static void main(String[] args) {
+		String x="a";
+		//Runnable r=()->System.out.println(x);
+		x="b";
+		//r.run();
 		
-	//}
+		"b".equals(x);
+		
+		int d=20;
+	String a=	d + "".toString();
+	
+	}
 
 }
