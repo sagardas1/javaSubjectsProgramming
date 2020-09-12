@@ -15,6 +15,14 @@ public class A {
 	}
 
 	public static void main(String[] args) {
+		
+		
+		Animal animal=new Animal();
+		animal.a=20;
+		
+		
+		Animal ani=new Animal();
+		System.out.println(ani.a);
 
 		@SuppressWarnings("unused")
 		int a[] = { 1, 2, 3, 2 };

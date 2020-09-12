@@ -1,5 +1,10 @@
 package overRiding;
 
+import java.nio.file.FileAlreadyExistsException;
+
+import inheritance.Animal;
+import inheritance.Dog;
+
 public class ChildClass extends ParentClass {
 
 	ChildClass() {
@@ -7,12 +12,14 @@ public class ChildClass extends ParentClass {
 	}
 
 	@Override
-	protected void m1() {
+	protected void m1() throws FileAlreadyExistsException{
 		System.out.println("m1() child class");
 	}
 
-	public void m3() {
+	@Override
+	public Dog m3() {
 		System.out.println("m3() child class");
+		return null;
 	}
 
 }
