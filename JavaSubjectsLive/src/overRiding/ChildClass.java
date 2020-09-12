@@ -11,7 +11,7 @@ public class ChildClass {
 		"b".equals(x);
 
 		int d = 20;
-		String a = d + "".toString();
+		//String a = d + "".toString();
 
 	}
 
