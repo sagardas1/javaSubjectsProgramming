@@ -62,13 +62,13 @@ class BinarySearch {
 		return null;
 	}
 
-	private Node getSuccessor(Node root) {
-		if (root == null) {
-			return null;
-		}
-
-		return null;
-	}
+//	private Node getSuccessor(Node root) {
+//		if (root == null) {
+//			return null;
+//		}
+//
+//		return null;
+//	}
 
 	public void inOrder(Node root) {
 		if (root == null) {
