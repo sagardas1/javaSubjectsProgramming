@@ -24,7 +24,7 @@ public class MainClass<T, V> {
 		Employee employee2 = new Employee();
 		employee2.setName("hhh");
 		employee2.setRollNo(11);
-		//@SuppressWarnings("unused")
+		// @SuppressWarnings("unused")
 		Address address2 = a.m1(employee2);
 
 		System.out.println(new Gson().toJson(address2));
