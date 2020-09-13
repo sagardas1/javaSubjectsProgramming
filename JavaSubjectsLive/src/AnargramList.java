@@ -24,7 +24,7 @@ public class AnargramList {
 				if (arr[i].length() == arr[j].length()) {
 
 					count += 1;
-					boolean b = checkAnargram(arr[i], arr[j]);
+				boolean b = checkAnargram(arr[i], arr[j]);
 					if (b) {
 						count += 1;
 
