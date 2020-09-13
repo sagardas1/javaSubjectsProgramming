@@ -11,7 +11,8 @@ public class FailFastandFailSafe {
 		a.add("Sagar das");
 		a.add("sidharth das");
 
-		for (@SuppressWarnings("unused") String s : a) {
+		for (@SuppressWarnings("unused")
+		String s : a) {
 			a.remove("Sagar das");
 		}
 
@@ -28,9 +29,9 @@ public class FailFastandFailSafe {
 		loans.add("gold loan");
 
 		for (String loan : loans) {
-			
-				loans.remove(loan);
-			
+
+			loans.remove(loan);
+
 		}
 
 //		ConcurrentHashMap<String,Integer> map=new ConcurrentHashMap<String,Integer>();
