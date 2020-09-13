@@ -17,7 +17,6 @@ public class ListImpl {
 				System.out.println("remove " + i);
 				list.remove(7);
 				list.add(10);
-
 			}
 
 		}
