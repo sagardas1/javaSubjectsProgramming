@@ -5,7 +5,6 @@ class Node {
 	int data;
 
 }
-
 public class BST {
 	public static void main(String[] args) {
 		BinarySearch search = new BinarySearch();
