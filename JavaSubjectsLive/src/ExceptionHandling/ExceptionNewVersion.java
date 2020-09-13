@@ -14,4 +14,12 @@ public class ExceptionNewVersion {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	
+	public void m1() {
+		try{
+			
+		}catch(Exception e) {}
+	}
 }
