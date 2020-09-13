@@ -7,7 +7,6 @@ public class CountNoOfEachChara {
 	public static void main(String[] args) {
 		int count = 0;
 		String a = "sagar";
-
 		Map<Character, Integer> m = new HashMap<Character, Integer>();
 		char[] arr = a.toCharArray();
 
