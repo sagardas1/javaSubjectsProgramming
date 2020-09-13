@@ -15,7 +15,6 @@ public class BST {
 		root = search.insert(root, 4);
 		root = search.insert(root, 3);
 		root = search.insert(root, 7);
-
 		search.inOrder(root);
 
 	}
