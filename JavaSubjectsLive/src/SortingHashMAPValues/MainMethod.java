@@ -9,7 +9,6 @@ import java.util.Map;
 public class MainMethod {
 
 	public static void main(String[] args) {
-
 		HashMap<String, Student> map = new HashMap<>();
 
 		Student e = new Student();
