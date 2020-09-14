@@ -21,6 +21,15 @@ public class MainClass {
 		list.add(employee2);
 		Collections.sort(list, new MyComparator());
 
+		
+		Map<String ,Employee> map=new HashMap<String,Employee>();
+		map.put(employee.getName(), employee);
+		map.put(employee1.getName(), employee1);
+		map.put(employee2.getName(), employee2);
+		
+		ArrayList<Map.Entry<String, Employee>> listt=new ArrayList(map.entrySet());
+		Collections.sort(listt, new MapComparetor());
+		
 		System.out.println(new Gson().toJson(list));
 	}
 
