@@ -1,6 +1,7 @@
 package sortingAlgo;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 import com.google.gson.Gson;
 
@@ -26,7 +27,7 @@ public class MainClass {
 		map.put(employee1.getName(), employee1);
 		map.put(employee2.getName(), employee2);
 
-		ArrayList<Map.Entry<String, Employee>> listt = new ArrayList(map.entrySet());
+		ArrayList<Map.Entry<String, Employee>> listt = new ArrayList<Entry<String, Employee>>(map.entrySet());
 		Collections.sort(listt, new MapComparetor());
 		for (Map.Entry<String, Employee> entry : listt) {
 			System.out.print(entry.getKey() + "  ");
