@@ -36,17 +36,21 @@ public class MainClass {
 			System.out.println(new Gson().toJson(e));
 		}
 
-//		Map<String, Employee> map = new HashMap<String, Employee>();
-//		map.put(employee.getName(), employee);
-//		map.put(employee1.getName(), employee1);
-//		map.put(employee2.getName(), employee2);
+		Map<String, Employee> map = new HashMap<String, Employee>();
+		map.put(employee.getName(), employee);
+		map.put(employee1.getName(), employee1);
+		map.put(employee2.getName(), employee2);
 
-//		ArrayList<Map.Entry<String, Employee>> listt = new ArrayList<Entry<String, Employee>>(map.entrySet());
-		// Collections.sort(listt, new MapComparetor());
-//		for (Map.Entry<String, Employee> entry : listt) {
-//			System.out.print(entry.getKey() + "  ");
-//			System.out.println(new Gson().toJson(entry.getValue()));
-//		}
+		ArrayList<Map.Entry<String, Employee>> listt = new ArrayList<Entry<String, Employee>>(map.entrySet());
+		
+		
+		Comparator<Map.Entry<String, Employee>> cmp=(emp1,emp2) ->{
+			
+			if(emp1.getValue().getRedge()>emp1.getValue().getRedge()) return 1;
+			else if(emp1.getValue().getRedge()<emp1.getValue().getRedge()) return -1;
+			else
+			return 0;
+		};
 
 		//System.out.println(new Gson().toJson(list));
 	}
