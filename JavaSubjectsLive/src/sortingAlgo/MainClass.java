@@ -52,7 +52,6 @@ public class MainClass {
 			return 0;
 		};
 
-		//System.out.println(new Gson().toJson(list));
 	}
 
 }
