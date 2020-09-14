@@ -6,9 +6,9 @@ public class MainClass {
 		MyfunctionalInterface saysomething1 = () -> System.out.println("Sagardas");
 		saysomething1.say();
 
-		MyfunctionalInterface saysomething = MethodReferance::saysomething;
-
-		saysomething.say();
+//		MyfunctionalInterface saysomething = MethodReferance::saysomething;
+//
+//		saysomething.say();
 
 	}
 }
