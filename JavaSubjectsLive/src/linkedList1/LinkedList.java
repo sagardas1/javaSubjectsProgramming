@@ -16,7 +16,7 @@ public class LinkedList {
 		root = impli.insert(root, 60);
 		root = impli.insert(root, 80);
 
-		impli.printAllValue(root);
+		//impli.printAllValue(root);
 
 		// insert in first
 		System.out.println("--------------------------------------------");
@@ -27,17 +27,22 @@ public class LinkedList {
 		System.out.println("--------------------------------------------");
 		impli.insertInMiddle(root, 40, 3);
 		impli.printAllValue(root);
-		
+
+//		System.out.println("--------------------------------------------");
+//
+//		impli.deleteLastNode(root);
+//		impli.printAllValue(root);
+//
+//		System.out.println("--------------------------------------------");
+//
+//		root = impli.deleteFrontNode(root);
+//		impli.printAllValue(root);
+
 		System.out.println("--------------------------------------------");
 		
-		impli.deleteLastNode(root);
+		impli.deleteElementAtGivenPosition(root,4);
 		impli.printAllValue(root);
-		
-		System.out.println("--------------------------------------------");
-		
-		
-	root=	impli.deleteFrontNode(root);
-		impli.printAllValue(root);
+
 	}
 }
 
@@ -57,19 +62,30 @@ class LinkedListImpli {
 		return root;
 	}
 
-	public Node deleteFrontNode(Node root) {
-		Node temp=root.next;
-		return temp;
+	public void deleteElementAtGivenPosition(Node root, int index) {
+	for(int i=0;i<index-1;i++) {
+		root=root.next;
+		
+	}
+	Node temp=root.next.next;
+	
+	root.next=temp;
 		
 	}
 
+	public Node deleteFrontNode(Node root) {
+		Node temp = root.next;
+		return temp;
+
+	}
+
 	public void deleteLastNode(Node root) {
-		for(int i=0;i<count-2;i++) {
-			root=root.next;
-			
+		for (int i = 0; i < count - 2; i++) {
+			root = root.next;
+
 		}
-		root.next=null;
-		
+		root.next = null;
+
 	}
 
 	void insertInMiddle(Node root, int val, int index) {
@@ -82,7 +98,7 @@ class LinkedListImpli {
 		node.data = val;
 		root.next = node;
 		node.next = temp;
-		count+=1;
+		count += 1;
 
 	}
 
