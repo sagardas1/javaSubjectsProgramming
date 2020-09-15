@@ -127,4 +127,28 @@ class LinkedListImpli {
 		node.next = null;
 		return node;
 	}
+	
+	
+	
+	public boolean checkCircular(Node root) {
+		
+		if(root==null) {
+			return false;
+			
+		}
+		
+		Node slow=root;
+		Node fast=root;
+		while(slow.next!=null&&fast.next.next!=null) {
+			slow=slow.next;
+			fast=fast.next.next;
+			
+			if(slow.data==fast.data) {
+				return true;
+			}
+			
+		}
+		return false;
+		
+	}
 }
