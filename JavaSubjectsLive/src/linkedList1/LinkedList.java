@@ -1,45 +1,114 @@
 package linkedList1;
 
 class Node {
-	Node next;
 	int data;
+	Node next;
 
 }
 
 public class LinkedList {
 	public static void main(String[] args) {
-
 		LinkedListImpli impli = new LinkedListImpli();
 		Node root = null;
-		root = impli.add(root, 10);
-		root = impli.add(root, 3);
+		root = impli.insert(root, 10);
 
-		System.out.println("hfbsh");
+		root = impli.insert(root, 20);
+		root = impli.insert(root, 60);
+		root = impli.insert(root, 80);
+
+		impli.printAllValue(root);
+
+		// insert in first
+		System.out.println("--------------------------------------------");
+		root = impli.insertInFirst(root, 100);
+
+		impli.printAllValue(root);
+
+		System.out.println("--------------------------------------------");
+		impli.insertInMiddle(root, 40, 3);
+		impli.printAllValue(root);
+		
+		System.out.println("--------------------------------------------");
+		
+		impli.deleteLastNode(root);
+		impli.printAllValue(root);
+		
+		System.out.println("--------------------------------------------");
+		
+		
+	root=	impli.deleteFrontNode(root);
+		impli.printAllValue(root);
 	}
-
 }
 
 class LinkedListImpli {
 
-	public Node add(Node root, int i) {
+	int count = 0;
 
+	public Node insert(Node root, int i) {
 		if (root == null) {
-			return createNode(i);
-
-		}
-		if (root != null) {
-			root.next = add(root.next, i);
+			return createNewNode(i);
 		}
 
+		else {
+
+			root.next = insert(root.next, i);
+		}
 		return root;
+	}
+
+	public Node deleteFrontNode(Node root) {
+		Node temp=root.next;
+		return temp;
+		
+	}
+
+	public void deleteLastNode(Node root) {
+		for(int i=0;i<count-2;i++) {
+			root=root.next;
+			
+		}
+		root.next=null;
+		
+	}
+
+	void insertInMiddle(Node root, int val, int index) {
+		for (int i = 0; i < index - 1; i++) {
+			root = root.next;
+
+		}
+		Node temp = root.next;
+		Node node = new Node();
+		node.data = val;
+		root.next = node;
+		node.next = temp;
+		count+=1;
 
 	}
 
-	private Node createNode(int i) {
-		Node a = new Node();
-		a.data = i;
-		a.next = null;
-		return a;
+	public Node insertInFirst(Node root, int i) {
+		count += 1;
+
+		Node temp = new Node();
+		temp.data = i;
+		temp.next = root;
+		return temp;
 	}
 
+	public void printAllValue(Node root) {
+		if (root == null) {
+			return;
+		}
+		System.out.println(root.data);
+		printAllValue(root.next);
+
+	}
+
+	private Node createNewNode(int i) {
+		count += 1;
+		Node node = new Node();
+		node.data = i;
+		node.next = null;
+		return node;
+	}
 }
