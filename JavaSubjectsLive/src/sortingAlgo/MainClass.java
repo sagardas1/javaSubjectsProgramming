@@ -42,14 +42,15 @@ public class MainClass {
 		map.put(employee2.getName(), employee2);
 
 		ArrayList<Map.Entry<String, Employee>> listt = new ArrayList<Entry<String, Employee>>(map.entrySet());
-		
-		
-		Comparator<Map.Entry<String, Employee>> cmp=(emp1,emp2) ->{
-			
-			if(emp1.getValue().getRedge()>emp1.getValue().getRedge()) return 1;
-			else if(emp1.getValue().getRedge()<emp1.getValue().getRedge()) return -1;
+
+		Comparator<Map.Entry<String, Employee>> cmp = (emp1, emp2) -> {
+
+			if (emp1.getValue().getRedge() > emp1.getValue().getRedge())
+				return 1;
+			else if (emp1.getValue().getRedge() < emp1.getValue().getRedge())
+				return -1;
 			else
-			return 0;
+				return 0;
 		};
 
 	}
