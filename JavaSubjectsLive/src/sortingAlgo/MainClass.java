@@ -44,6 +44,7 @@ public class MainClass {
 		@SuppressWarnings("unused")
 		ArrayList<Map.Entry<String, Employee>> listt = new ArrayList<Entry<String, Employee>>(map.entrySet());
 
+		@SuppressWarnings("unused")
 		Comparator<Map.Entry<String, Employee>> cmp = (emp1, emp2) -> {
 
 			if (emp1.getValue().getRedge() > emp1.getValue().getRedge())
