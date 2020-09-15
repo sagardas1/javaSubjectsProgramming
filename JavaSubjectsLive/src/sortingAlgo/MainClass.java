@@ -41,6 +41,7 @@ public class MainClass {
 		map.put(employee1.getName(), employee1);
 		map.put(employee2.getName(), employee2);
 
+		@SuppressWarnings("unused")
 		ArrayList<Map.Entry<String, Employee>> listt = new ArrayList<Entry<String, Employee>>(map.entrySet());
 
 		Comparator<Map.Entry<String, Employee>> cmp = (emp1, emp2) -> {
