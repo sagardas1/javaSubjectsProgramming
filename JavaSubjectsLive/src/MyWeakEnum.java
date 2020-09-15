@@ -8,6 +8,7 @@ public enum MyWeakEnum {
 		this.i = i;
 
 	}
+	
 	public int getNum() {
 		return this.i;
 	}
