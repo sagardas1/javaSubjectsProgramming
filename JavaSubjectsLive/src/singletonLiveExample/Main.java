@@ -14,6 +14,7 @@ public class Main {
 
 		ContactInfo contactInfo1 = ContactInfo.getInstance();
 
+		
 		Employee employee1 = new Employee();
 		employee1.seteName("sidharth");
 		employee1.setRedgNo("13");
