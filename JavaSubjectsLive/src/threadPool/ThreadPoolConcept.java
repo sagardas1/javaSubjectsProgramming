@@ -8,8 +8,12 @@ public class ThreadPoolConcept {
 	
 	public static void main(String[] args) {
 		Service service=new Service();
+	int count=
+	Runtime.getRuntime().availableProcessors();
+	
+	System.out.println(count);
 		Runnable r=() ->{
-			service.execute();
+			service.execute(count);
 		};
 		
 		ExecutorService executorService =Executors.newFixedThreadPool(10);
