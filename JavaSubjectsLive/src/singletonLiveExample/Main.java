@@ -9,11 +9,17 @@ public class Main {
 		ContactInfo contactInfo = ContactInfo.getInstance();
 
 		employee.seteName("Sagar");
+		
+		
+		
 		employee.setRedgNo("12");
 		employee.setContactInfo(contactInfo);
 
 		ContactInfo contactInfo1 = ContactInfo.getInstance();
 
+		
+		
+		
 		
 		Employee employee1 = new Employee();
 		employee1.seteName("sidharth");
