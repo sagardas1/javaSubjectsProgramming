@@ -21,7 +21,6 @@ public class MySteamApI {
 		productsList.stream().filter((w) -> w.price >= 30000).forEach((w) -> System.out.println(w.price));
 
 		long count = productsList.stream().count();
-		System.out.println(count);
 
 		Set<Product> set = productsList.stream().collect(Collectors.toSet());
 
