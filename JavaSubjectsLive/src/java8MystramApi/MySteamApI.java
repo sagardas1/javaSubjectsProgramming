@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import com.google.gson.Gson;
 
 public class MySteamApI {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		List<Product> productsList = new ArrayList<Product>();
 		productsList.add(new Product(1, "HP Laptop", 25000f));
