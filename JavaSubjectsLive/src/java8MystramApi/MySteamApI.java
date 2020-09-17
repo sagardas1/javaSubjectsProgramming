@@ -23,7 +23,6 @@ public class MySteamApI {
 		System.out.println(count);
 
 		Set<Product> set = productsList.stream().collect(Collectors.toSet());
-		System.out.println(new Gson().toJson(set));
 
 		@SuppressWarnings("unused")
 		Map<Float, Product> m = productsList.stream().collect(Collectors.toMap((u) -> u.price, (u) -> u));
