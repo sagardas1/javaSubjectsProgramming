@@ -28,6 +28,7 @@ public class MySteamApI {
 		@SuppressWarnings("unused")
 		Map<Float, Product> m = productsList.stream().collect(Collectors.toMap((u) -> u.price, (u) -> u));
 
+		@SuppressWarnings("unused")
 		List<Float> f = productsList.stream().map((h) -> h.price).collect(Collectors.toList());
 
 	}
