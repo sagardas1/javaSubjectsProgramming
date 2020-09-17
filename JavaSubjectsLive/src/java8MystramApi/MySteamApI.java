@@ -14,6 +14,7 @@ public class MySteamApI {
 		productsList.add(new Product(4, "Sony Laptop", 28000f));
 		productsList.add(new Product(5, "Apple Laptop", 90000f));
 
+		@SuppressWarnings("unused")
 		List<Product> p = productsList.stream().filter((q) -> q.price > 30000).collect(Collectors.toList());
 
 		productsList.stream().filter((w) -> w.price >= 30000).forEach((w) -> System.out.println(w.price));
