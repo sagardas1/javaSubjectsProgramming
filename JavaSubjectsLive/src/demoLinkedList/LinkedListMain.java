@@ -17,17 +17,16 @@ public class LinkedListMain {
 		root = linkedList.insetInMiddle(root, 40, 2);
 
 		root = linkedList.insertInBegaining(root, 30);
-		
+
 		linkedList.printData(root);
 
 		boolean b = linkedList.checkLoopExists(root);
 		System.out.println(b);
 
 		root = linkedList.deleteFirstNode(root);
-		
-		
+
 		linkedList.printData(root);
-		
+
 		root = linkedList.removeInMiddle(root, 2);
 
 	}
@@ -48,26 +47,25 @@ class LinkedList {
 	}
 
 	public void printData(Node root) {
-		if(root==null) {
-			return ;
-			
-		}
-		else {
-			while(root!=null) {
+		if (root == null) {
+			return;
+
+		} else {
+			while (root != null) {
 				System.out.println(root.data);
-				root=root.next;
+				root = root.next;
 			}
 		}
-		
+
 	}
 
 	public Node removeInMiddle(Node root, int index) {
-		
-		for(int i=0;i<index-1;i++) {
-			root=root.next;
+
+		for (int i = 0; i < index - 1; i++) {
+			root = root.next;
 		}
-		Node temp=root.next.next;
-		root.next=temp;
+		Node temp = root.next.next;
+		root.next = temp;
 		return root;
 	}
 
