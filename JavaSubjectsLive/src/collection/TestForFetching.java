@@ -14,10 +14,6 @@ public class TestForFetching {
 	}
 
 	public static void main(String[] args) {
-//		String name="hello world";
-//		System.out.println(name.substring(1,2));
-//String[] nameList=name.split("o");
-//for(String a:nameList) {System.out.print (a +"   ");}
 
 		String textFile = "I am a good boy i am  very  good  at code code";
 		String wordList[] = textFile.split(" ");
