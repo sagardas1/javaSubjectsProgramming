@@ -18,11 +18,17 @@ public class LinkedListMain {
 
 		root = linkedList.insertInBegaining(root, 30);
 		
-		boolean b=linkedList.checkLoopExists(root);
+		linkedList.printData(root);
+
+		boolean b = linkedList.checkLoopExists(root);
+		System.out.println(b);
+
+		root = linkedList.deleteFirstNode(root);
 		
 		
-		root=linkedList.deleteFirstNode(root);
+		linkedList.printData(root);
 		
+		root = linkedList.removeInMiddle(root, 2);
 
 	}
 }
@@ -41,33 +47,53 @@ class LinkedList {
 		return root;
 	}
 
-	public Node deleteFirstNode(Node root) {
-	
-
+	public void printData(Node root) {
 		if(root==null) {
-			return null;
+			return ;
+			
 		}
 		else {
+			while(root!=null) {
+				System.out.println(root.data);
+				root=root.next;
+			}
+		}
+		
+	}
+
+	public Node removeInMiddle(Node root, int index) {
+		
+		for(int i=0;i<index-1;i++) {
 			root=root.next;
+		}
+		Node temp=root.next.next;
+		root.next=temp;
+		return root;
+	}
+
+	public Node deleteFirstNode(Node root) {
+
+		if (root == null) {
+			return null;
+		} else {
+			root = root.next;
 		}
 		return root;
 	}
 
 	public boolean checkLoopExists(Node root) {
-		
-		
-		Node fast=root;
-		Node slow=root;
-		
-		while(fast.next.next!=null && slow.next !=null ) {
-			fast=fast.next.next;
-			slow=slow.next;
-			if(fast.data==slow.data) {
+
+		Node fast = root;
+		Node slow = root;
+
+		while (fast.next.next != null && slow.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+			if (fast.data == slow.data) {
 				return true;
-				
+
 			}
-			
-			
+
 		}
 		return false;
 	}
