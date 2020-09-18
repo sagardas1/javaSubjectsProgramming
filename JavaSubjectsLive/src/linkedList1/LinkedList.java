@@ -16,7 +16,7 @@ public class LinkedList {
 		root = impli.insert(root, 60);
 		root = impli.insert(root, 80);
 
-		//impli.printAllValue(root);
+		// impli.printAllValue(root);
 
 		// insert in first
 		System.out.println("--------------------------------------------");
@@ -39,8 +39,8 @@ public class LinkedList {
 //		impli.printAllValue(root);
 
 		System.out.println("--------------------------------------------");
-		
-		impli.deleteElementAtGivenPosition(root,4);
+
+		impli.deleteElementAtGivenPosition(root, 4);
 		impli.printAllValue(root);
 
 	}
@@ -63,14 +63,14 @@ class LinkedListImpli {
 	}
 
 	public void deleteElementAtGivenPosition(Node root, int index) {
-	for(int i=0;i<index-1;i++) {
-		root=root.next;
-		
-	}
-	Node temp=root.next.next;
-	
-	root.next=temp;
-		
+		for (int i = 0; i < index - 1; i++) {
+			root = root.next;
+
+		}
+		Node temp = root.next.next;
+
+		root.next = temp;
+
 	}
 
 	public Node deleteFrontNode(Node root) {
@@ -127,28 +127,26 @@ class LinkedListImpli {
 		node.next = null;
 		return node;
 	}
-	
-	
-	
+
 	public boolean checkCircular(Node root) {
-		
-		if(root==null) {
+
+		if (root == null) {
 			return false;
-			
+
 		}
-		
-		Node slow=root;
-		Node fast=root;
-		while(slow.next!=null&&fast.next.next!=null) {
-			slow=slow.next;
-			fast=fast.next.next;
-			
-			if(slow.data==fast.data) {
+
+		Node slow = root;
+		Node fast = root;
+		while (slow.next != null && fast.next.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+
+			if (slow.data == fast.data) {
 				return true;
 			}
-			
+
 		}
 		return false;
-		
+
 	}
 }
