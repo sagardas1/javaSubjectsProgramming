@@ -14,10 +14,16 @@ public class LinkedListMain {
 		root = linkedList.insert(root, 20);
 		root = linkedList.insert(root, 40);
 
-	root=	linkedList.insetInMiddle(root, 40, 2);
+		root = linkedList.insetInMiddle(root, 40, 2);
+
+		root = linkedList.insertInBegaining(root, 30);
 		
-		root=linkedList.insertInBegaining(root,30);
+		boolean b=linkedList.checkLoopExists(root);
 		
+		
+		root=linkedList.deleteFirstNode(root);
+		
+
 	}
 }
 
@@ -35,11 +41,42 @@ class LinkedList {
 		return root;
 	}
 
-	public Node insertInBegaining(Node root, int i) {
+	public Node deleteFirstNode(Node root) {
+	
+
+		if(root==null) {
+			return null;
+		}
+		else {
+			root=root.next;
+		}
+		return root;
+	}
+
+	public boolean checkLoopExists(Node root) {
 		
-		Node node=new Node();
-		node.data=i;
-		node.next=root;
+		
+		Node fast=root;
+		Node slow=root;
+		
+		while(fast.next.next!=null && slow.next !=null ) {
+			fast=fast.next.next;
+			slow=slow.next;
+			if(fast.data==slow.data) {
+				return true;
+				
+			}
+			
+			
+		}
+		return false;
+	}
+
+	public Node insertInBegaining(Node root, int i) {
+
+		Node node = new Node();
+		node.data = i;
+		node.next = root;
 		return node;
 	}
 
@@ -54,7 +91,7 @@ class LinkedList {
 		node.data = data;
 		node.next = temp;
 		root.next = node;
-		
+
 		return root;
 	}
 
