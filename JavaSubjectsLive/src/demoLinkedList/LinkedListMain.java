@@ -14,7 +14,10 @@ public class LinkedListMain {
 		root = linkedList.insert(root, 20);
 		root = linkedList.insert(root, 40);
 
-		linkedList.insetInMiddle(root, 40, 2);
+	root=	linkedList.insetInMiddle(root, 40, 2);
+		
+		root=linkedList.insertInBegaining(root,30);
+		
 	}
 }
 
@@ -32,7 +35,15 @@ class LinkedList {
 		return root;
 	}
 
-	public void insetInMiddle(Node root, int data, int index) {
+	public Node insertInBegaining(Node root, int i) {
+		
+		Node node=new Node();
+		node.data=i;
+		node.next=root;
+		return node;
+	}
+
+	public Node insetInMiddle(Node root, int data, int index) {
 
 		for (int j = 0; j < index - 1; j++) {
 			root = root.next;
@@ -43,6 +54,8 @@ class LinkedList {
 		node.data = data;
 		node.next = temp;
 		root.next = node;
+		
+		return root;
 	}
 
 	private Node createNode(int i) {
