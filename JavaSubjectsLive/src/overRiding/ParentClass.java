@@ -18,8 +18,7 @@ public class ParentClass {
 		System.out.println("m2() parent Class");
 		return null;
 	}
-	
-	
+
 	void m6() {
 		System.out.println();
 	}
