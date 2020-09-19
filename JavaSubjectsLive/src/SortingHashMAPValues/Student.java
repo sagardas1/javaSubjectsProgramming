@@ -1,6 +1,12 @@
 package SortingHashMAPValues;
 
 public class Student {
+	
+
+	public Student(String name, int rollNo) {
+		this.name = name;
+		this.rollNo = rollNo;
+	}
 
 	private String name;
 	private int rollNo;
