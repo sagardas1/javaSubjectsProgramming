@@ -14,5 +14,4 @@ public class Super1 {
 	public void getnum() {
 		System.out.println(a + "   " + b);
 	}
-
 }
