@@ -11,14 +11,14 @@ public class MainMethod {
 	public static void main(String[] args) {
 		HashMap<String, Student> map = new HashMap<>();
 
-		Student e = new Student();
+		Student e = new Student(null, 0);
 		e.setName("sag");
 		e.setRollNo(27);
-		Student user = new Student();
+		Student user = new Student(null, 0);
 		user.setName("sq");
 		user.setRollNo(21);
 
-		Student user2 = new Student();
+		Student user2 = new Student(null, 0);
 		user2.setName("sqw");
 		user2.setRollNo(200);
 
