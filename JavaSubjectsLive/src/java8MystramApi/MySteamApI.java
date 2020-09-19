@@ -14,6 +14,8 @@ public class MySteamApI {
 		productsList.add(new Product(2, "Dell Laptop", 30000f));
 		productsList.add(new Product(3, "Lenevo Laptop", 28000f));
 		productsList.add(new Product(4, "Sony Laptop", 28000f));
+		
+		productsList.add(new Product(5, "Apple Laptop", 90000f));
 		productsList.add(new Product(5, "Apple Laptop", 90000f));
 
 		@SuppressWarnings("unused")
