@@ -1,15 +1,12 @@
 package streamApi;
 
 public class EmployeeCase {
-	
-	
+
 	public EmployeeCase(String name, int redge) {
 		super();
 		this.name = name;
 		this.redge = redge;
 	}
-
-	
 
 	String name;
 	int redge;
