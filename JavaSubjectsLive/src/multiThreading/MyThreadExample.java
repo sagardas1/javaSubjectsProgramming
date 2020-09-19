@@ -5,6 +5,11 @@ public class MyThreadExample implements Runnable {
 		for (int i = 0; i < 5; i++) {
 			System.out.println("run Method");
 		}
+		
+		
+		if(3>4 & 6>7) {
+			
+		}
 	}
 
 }
