@@ -13,7 +13,6 @@ public class SortByComparatorByroll implements Comparator<Object> {
 		@SuppressWarnings("unchecked")
 		Map.Entry<String, Employee> m2 = (Entry<String, Employee>) o2;
 
-		
 		Employee e1 = m1.getValue();
 		Employee e2 = m2.getValue();
 
