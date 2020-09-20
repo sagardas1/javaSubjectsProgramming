@@ -68,7 +68,6 @@ class LinkedListImpli {
 
 		}
 		Node temp = root.next.next;
-
 		root.next = temp;
 
 	}
