@@ -7,14 +7,12 @@ interface Sayable {
 public class MethodReferance {
 
 	public static void main(String[] args) {
-		MethodReferance methodReferance=new MethodReferance();
-		
+		MethodReferance methodReferance = new MethodReferance();
+
 		Sayable sayable = MethodReferance::hey;
-		Sayable sayable1=methodReferance::hello;
+		Sayable sayable1 = methodReferance::hello;
 		sayable.say();
 		sayable1.say();
-		
-		
 
 	}
 
