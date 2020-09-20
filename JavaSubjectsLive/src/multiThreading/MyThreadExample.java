@@ -7,9 +7,9 @@ public class MyThreadExample implements Runnable {
 		}
 		
 		
-		if(3>4 & 6>7) {
-			
-		}
+//		if(3>4 & 6>7) {
+//			
+//		}
 	}
 
 }
