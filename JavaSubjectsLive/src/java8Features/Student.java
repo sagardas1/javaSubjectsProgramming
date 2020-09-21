@@ -1,8 +1,6 @@
 package java8Features;
 
 public class Student {
-	
-	
 
 	public Student(String name, int rollNo) {
 		super();
