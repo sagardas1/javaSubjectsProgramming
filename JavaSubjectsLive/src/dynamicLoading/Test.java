@@ -16,7 +16,7 @@ public class Test {
 		Bike bike=(Bike) a.newInstance();
 	
 		@SuppressWarnings("unchecked")
-		Class<Bike> class1= (Class<Bike>) Class.forName("dynamicLoading.Bike");
+		Class<Bike> class1 = (Class<Bike>) Class.forName("dynamicLoading.Bike");
 		Bike b1=(Bike)class1.newInstance();
 		b1.ride();
 		
