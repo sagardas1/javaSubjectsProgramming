@@ -7,10 +7,8 @@ public class Main {
 		final ArrayList<String> a = new ArrayList<String>();
 		a.add("Sa");
 		a.add("sagar");
-		 ArrayList<String> b= new ArrayList<String>();
+		ArrayList<String> b = new ArrayList<String>();
 		b.add("Sa");
-	
 
-		
 	}
 }
