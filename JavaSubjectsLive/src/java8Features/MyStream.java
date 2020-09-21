@@ -32,10 +32,8 @@ public class MyStream {
 		map.put("5", s5);
 		map.put("6", s6);
 
-		
-		Map<String ,Student> m=map.entrySet().stream()
-				.filter(p -> p.getValue().getName().equals("shu"))
-				.collect(Collectors.toMap(k ->k.getKey(), k ->k.getValue()));
+		Map<String, Student> m = map.entrySet().stream().filter(p -> p.getValue().getName().equals("shu"))
+				.collect(Collectors.toMap(k -> k.getKey(), k -> k.getValue()));
 
 		map.entrySet().stream().filter(p -> p.getValue().getRollNo() > 18).forEach(k -> System.out.println(k.getKey()));
 
