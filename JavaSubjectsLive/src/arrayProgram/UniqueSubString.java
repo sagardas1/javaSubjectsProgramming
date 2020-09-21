@@ -14,6 +14,7 @@ public class UniqueSubString {
 			} else
 				list.add(a.charAt(i) + "" + a.charAt(0) + "");
 		}
+		
 
 		for (@SuppressWarnings("unused")
 		String s : list) {
