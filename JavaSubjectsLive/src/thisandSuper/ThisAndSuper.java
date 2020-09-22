@@ -10,6 +10,7 @@ public class ThisAndSuper extends Super1 {
 		this.a = 20;
 		this.b = 20;
 	}
+
 	public static void main(String[] args) {
 		ThisAndSuper andSuper = new ThisAndSuper(10, 20);
 		System.out.println(andSuper.a);
