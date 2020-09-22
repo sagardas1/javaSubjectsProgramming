@@ -1,6 +1,6 @@
 package runPack;
 
-import java.util.Map;
+import java.util.*;
 
 public class InvestigationsService {
 
