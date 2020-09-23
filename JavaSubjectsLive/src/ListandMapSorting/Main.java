@@ -14,8 +14,6 @@ public class Main {
 		employee2.setName("Sidharth");
 		employee2.setRollNo(15);
 
-		
-		
 		HashMap<String, Employee> mao = new HashMap<String, Employee>();
 		mao.put(employee1.getName(), employee1);
 		mao.put(employee2.getName(), employee2);
