@@ -6,9 +6,6 @@ public class MyThreadExample implements Runnable {
 			System.out.println("run Method");
 		}
 
-//		if(3>4 & 6>7) {
-//			
-//		}
 	}
 
 }
