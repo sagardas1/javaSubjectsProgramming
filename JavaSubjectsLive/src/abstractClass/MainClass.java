@@ -8,6 +8,8 @@ public class MainClass {
 		class1.getName();
 		class1.m1();
 		
+		
+		
 	}
 
 }
