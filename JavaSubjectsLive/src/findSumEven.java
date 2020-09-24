@@ -1,8 +1,5 @@
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
-import com.google.gson.Gson;
+import java.util.ArrayList;
+import java.util.List;
 
 public class findSumEven {
 	
