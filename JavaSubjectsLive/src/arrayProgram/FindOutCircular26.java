@@ -18,6 +18,7 @@ public class FindOutCircular26 {
 				if (i == a[0])
 					continue;
 
+				
 			}
 		}
 
