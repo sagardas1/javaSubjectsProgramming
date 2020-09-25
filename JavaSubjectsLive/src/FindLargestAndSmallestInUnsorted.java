@@ -23,6 +23,7 @@ public class FindLargestAndSmallestInUnsorted {
 		
 		
 		String s="11112gghgsfhshgggbhbbbbbbgggg";
+		@SuppressWarnings("unused")
 		int count=0;
 		int pair=0;
 		
