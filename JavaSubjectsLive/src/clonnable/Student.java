@@ -1,6 +1,8 @@
 package clonnable;
 
-public class Student {
+public class Student implements Cloneable{
+	
+
 	private String name;
 	private int area;
 
@@ -23,6 +25,12 @@ public class Student {
 
 	public void setArea(int area) {
 		this.area = area;
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
 	}
 
 	
