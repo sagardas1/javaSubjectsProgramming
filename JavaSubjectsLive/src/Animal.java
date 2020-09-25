@@ -1,7 +1,6 @@
 
 public class Animal {
 
-	public int a=10;
-
+	public int a = 10;
 
 }
