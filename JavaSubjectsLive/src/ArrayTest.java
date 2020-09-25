@@ -4,6 +4,7 @@ public class ArrayTest {
 	public static void main(String[] args) {
 
 		int a[] = { 1, 2, 4, 3, 5, 4, 5, 6, 7, 9, 8 };
+		
 		int b = 7;
 		int size = a.length - 1;
 
