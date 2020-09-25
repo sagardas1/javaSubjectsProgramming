@@ -20,5 +20,22 @@ public class FindLargestAndSmallestInUnsorted {
 
 		System.out.println("smallest number is - " + smallest);
 		System.out.println("largest number is - " + largest);
+		
+		
+		String s="11112gghgsfhshgggbhbbbbbbgggg";
+		int count=0;
+		int pair=0;
+		
+		for(int i=0;i<s.length()-1;i++) {
+			
+			if(s.charAt(i)=='g'&&s.charAt(i+1)=='g') {
+				pair+=1;
+				count=0;
+			}else {
+				count+=1;
+			}
+			
+		}
+		System.out.println(pair);
 	}
 }
