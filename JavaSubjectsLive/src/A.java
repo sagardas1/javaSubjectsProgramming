@@ -4,28 +4,23 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class A {
 
-
 	public static void main(String[] args) {
-		
-	
-		int a[]= {1,2,3,1,2,4};
-		
-		
-		Set<Integer> set=new HashSet<Integer>();
-		
-		for(int i:a) {
-			boolean cond=set.add(i);
-			if(!cond) {
+
+		int a[] = { 1, 2, 3, 1, 2, 4 };
+
+		Set<Integer> set = new HashSet<Integer>();
+
+		for (int i : a) {
+			boolean cond = set.add(i);
+			if (!cond) {
 				System.out.println(i);
 			}
 		}
-		
-		
-	
-		ConcurrentHashMap<String , String> map=new ConcurrentHashMap<String, String>();
-		
+
+		ConcurrentHashMap<String, String> map = new ConcurrentHashMap<String, String>();
+
 		map.put("sa", "sa");
-		
- 	}
+
+	}
 
 }
