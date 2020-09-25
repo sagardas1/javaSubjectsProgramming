@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class A {
 
@@ -21,8 +22,9 @@ public class A {
 		
 		
 	
+		ConcurrentHashMap<String , String> map=new ConcurrentHashMap<String, String>();
 		
-		
+		map.put("sa", "sa");
 		
  	}
 
