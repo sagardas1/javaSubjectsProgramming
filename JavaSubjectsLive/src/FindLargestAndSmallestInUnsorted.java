@@ -15,6 +15,8 @@ public class FindLargestAndSmallestInUnsorted {
 				largest = a[i];
 			}
 		}
+		
+		
 
 		System.out.println("smallest number is - " + smallest);
 		System.out.println("largest number is - " + largest);
