@@ -1,26 +1,17 @@
-import java.util.HashSet;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.Arrays;
+import java.util.List;
 
 public class A {
 
 	public static void main(String[] args) {
-
-		int a[] = { 1, 2, 3, 1, 2, 4 };
-
-		Set<Integer> set = new HashSet<Integer>();
-
-		for (int i : a) {
-			boolean cond = set.add(i);
-			if (!cond) {
-				System.out.println(i);
-			}
-		}
-
-		ConcurrentHashMap<String, String> map = new ConcurrentHashMap<String, String>();
-
-		map.put("sa", "sa");
+		int a[] = { 1, 2, 3, 4, 5, 6, 7 };
+		List list = Arrays.asList(a);
 
 	}
 
+	public static void m1(int i) {
+
+		System.out.println(i);
+
+	}
 }
