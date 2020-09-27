@@ -21,6 +21,8 @@ public class AnargramList {
 			subList = new ArrayList<String>();
 			for (int j = 0; j < arr.length; j++) {
 
+				
+				
 				if (arr[i].length() == arr[j].length()) {
 
 					count += 1;
