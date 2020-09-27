@@ -9,6 +9,7 @@ public class FindSum {
 		int b = 10;
 		Set<List<Integer>> set = new HashSet<>();
 
+		
 		List<Integer> list = new ArrayList<Integer>();
 
 		for (int i = 0; i < a.length; i++) {
