@@ -1,4 +1,5 @@
 class Derived {
+	
 	public void getDetails(String s) {
 		System.out.println("Derived class " + s);
 	}
