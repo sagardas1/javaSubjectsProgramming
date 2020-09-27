@@ -17,6 +17,8 @@ public class Dummy {
 		
 		
 
+		
+		
 		@SuppressWarnings("unused")
 		int count = 0;
 		while (a != 0) {
