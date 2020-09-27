@@ -6,6 +6,7 @@ public class FiveTon {
 	private FiveTon() {
 	}
 
+	
 	public FiveTon getInstance() {
 		if (obj == null) {
 			obj = new FiveTon();
