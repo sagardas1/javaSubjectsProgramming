@@ -12,6 +12,7 @@ public class FindLargestAndSmallestInUnsorted {
 				smallest = a[i];
 			}
 
+			
 			if (largest < a[i]) {
 
 				largest = a[i];
