@@ -8,6 +8,7 @@ import java.util.Set;
 public class HashMapSyncronize {
 	public static void main(String[] args) {
 
+		
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		map.put("sagar", 1);
 		map.put("sidharth", 2);
