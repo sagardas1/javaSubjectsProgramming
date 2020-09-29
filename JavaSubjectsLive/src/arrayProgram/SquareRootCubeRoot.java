@@ -9,7 +9,7 @@ public class SquareRootCubeRoot {
 		System.out.println(squareroot);
 
 		do {
-			t = squareroot;// 1
+			t = squareroot;
 			squareroot = (t + (number / t)) / 2;
 		} while ((t - squareroot) != 0);
 
