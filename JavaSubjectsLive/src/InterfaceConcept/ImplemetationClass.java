@@ -7,6 +7,7 @@ public class ImplemetationClass {
 	}
 
 	public static void main(String[] args) {
+		
 		ImplemetationClass class1 = new ImplemetationClass();
 		class1.method1();
 	}
