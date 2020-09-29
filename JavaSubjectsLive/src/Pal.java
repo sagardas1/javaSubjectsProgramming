@@ -16,7 +16,7 @@ public class Pal {
 					count += 1;
 					break;
 				}
-
+				
 			}
 		}
 		System.out.println(count);
