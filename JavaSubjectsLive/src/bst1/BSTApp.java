@@ -19,8 +19,6 @@ public class BSTApp {
 		bst.inOrder(root);
 
 		bst.preOrder(root);
-		
-		
 
 	}
 
