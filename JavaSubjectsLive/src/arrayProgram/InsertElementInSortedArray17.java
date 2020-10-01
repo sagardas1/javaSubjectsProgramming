@@ -15,6 +15,8 @@ public class InsertElementInSortedArray17 {
 			} else {
 				finalArray[c] = a[i];
 				c += 1;
+				
+				
 			}
 		}
 
