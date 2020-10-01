@@ -12,8 +12,6 @@ public class MAin {
 
 	}
 
-	
-	
 	private static void m1(String object) {
 		System.out.println("string");
 
