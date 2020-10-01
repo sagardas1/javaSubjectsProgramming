@@ -15,6 +15,9 @@ public class SecondLargestElement {
 				smallest = a[i];
 
 			} else {
+				
+				
+				
 				if (secondSmallest == -1) {
 					secondSmallest = a[i];
 				} else if (secondSmallest >= a[i]) {
