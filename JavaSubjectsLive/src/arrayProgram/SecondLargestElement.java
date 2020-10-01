@@ -10,16 +10,12 @@ public class SecondLargestElement {
 		for (int i = 0; i < a.length; i++) {
 			if (smallest == -1) {
 
-				
 				smallest = a[i];
 			} else if (smallest >= a[i]) {
 				smallest = a[i];
 
 			} else {
-				
-				
-				
-				
+
 				if (secondSmallest == -1) {
 					secondSmallest = a[i];
 				} else if (secondSmallest >= a[i]) {
