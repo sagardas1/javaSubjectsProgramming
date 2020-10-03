@@ -7,7 +7,6 @@ public class EmployeeCase {
 		this.name = name;
 		this.redge = redge;
 	}
-
 	String name;
 	int redge;
 
