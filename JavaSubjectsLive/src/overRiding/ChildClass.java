@@ -7,7 +7,6 @@ public class ChildClass {
 		// Runnable r=()->System.out.println(x);
 		x = "b";
 		// r.run();
-
 		"b".equals(x);
 
 		// int d = 20;
