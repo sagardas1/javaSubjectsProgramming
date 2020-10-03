@@ -8,6 +8,7 @@ public class Student {
 		this.rollNo = rollNo;
 	}
 
+	
 	private String name;
 	private int rollNo;
 
