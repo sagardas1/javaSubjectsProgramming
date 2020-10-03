@@ -12,6 +12,7 @@ public class Employee {
 	public void seteName(String eName) {
 		this.eName = eName;
 	}
+	
 
 	public String getRedgNo() {
 		return redgNo;
