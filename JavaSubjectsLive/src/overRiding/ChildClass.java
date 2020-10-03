@@ -8,7 +8,6 @@ public class ChildClass {
 		x = "b";
 		// r.run();
 		"b".equals(x);
-
 		// int d = 20;
 		// String a = d + "".toString();
 
