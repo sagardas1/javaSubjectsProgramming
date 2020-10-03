@@ -13,7 +13,6 @@ public class MapValueComparator implements Comparator<Object> {
 		Map.Entry<String, Student> m1 = (Entry<String, Student>) o1;
 		@SuppressWarnings("unchecked")
 		Map.Entry<String, Student> m2 = (Entry<String, Student>) o2;
-
 		Student s1 = m1.getValue();
 		Student s2 = m2.getValue();
 
