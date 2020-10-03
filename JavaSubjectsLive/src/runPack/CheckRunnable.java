@@ -15,6 +15,7 @@ public class CheckRunnable {
 			investigationsService.getMap(map);
 
 		};
+		
 		Thread thread = new Thread(runnable);
 		thread.start();
 	}
