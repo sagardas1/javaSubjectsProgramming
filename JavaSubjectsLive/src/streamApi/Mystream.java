@@ -20,7 +20,6 @@ public class Mystream {
 
 		map.put(case1, 1);
 		map.put(case2, 2);
-
 		@SuppressWarnings("unused")
 		Set<Map.Entry<EmployeeCase, Integer>> entrySet = map.entrySet();
 
