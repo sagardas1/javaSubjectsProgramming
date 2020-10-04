@@ -4,6 +4,7 @@ public class SecondLargestElement {
 	public static void main(String[] args) {
 
 		int a[] = { 1 };
+		
 		int smallest = -1;
 		int secondSmallest = -1;
 
