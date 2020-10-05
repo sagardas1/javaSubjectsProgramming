@@ -6,6 +6,7 @@ public class Test {
 			throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 		// two ways to load class dynamically
 
+		
 		Class<Bike> bikeClass = Bike.class;
 
 		Bike b = bikeClass.newInstance();
