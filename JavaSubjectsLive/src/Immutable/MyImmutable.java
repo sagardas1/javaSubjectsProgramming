@@ -8,6 +8,7 @@ public final class MyImmutable {
 
 	MyImmutable(String a, ArrayList<String> address) {
 		this.a = a;
+		
 		this.address = address;
 	}
 
