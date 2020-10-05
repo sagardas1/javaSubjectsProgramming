@@ -10,6 +10,7 @@ public class Fiveton {
 	private Fiveton() {
 
 	}
+	
 
 	public static Fiveton getInstance() {
 		if (fiveton == null) {
