@@ -11,6 +11,7 @@ public class Test2 {
 			Class aClass = classLoader.loadClass("dynamicLoading.Bike");
 			System.out.println("aClass.getName() = " + aClass.getName());
 
+			
 			Bike bike = (Bike) aClass.newInstance();
 			bike.ride();
 
