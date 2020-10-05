@@ -14,7 +14,6 @@ public class TestForFetching {
 	}
 
 	public static void main(String[] args) {
-		
 
 		String textFile = "I am a good boy i am  very  good  at code code";
 		String wordList[] = textFile.split(" ");
