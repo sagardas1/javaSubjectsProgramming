@@ -15,6 +15,7 @@ public class HashMapSyncronize {
 
 		Map<String, Integer> m = Collections.synchronizedMap(map);
 
+		
 		Set<Map.Entry<String, Integer>> e = m.entrySet();
 		for (Map.Entry<String, Integer> e1 : e) {
 			System.out.println(e1.getKey());
