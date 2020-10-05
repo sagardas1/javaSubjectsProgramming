@@ -12,6 +12,7 @@ public final class MyImmutable {
 		this.address = address;
 	}
 
+	
 	public String getA() {
 		return a;
 	}
