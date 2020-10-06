@@ -68,7 +68,7 @@ public class AnargramList {
 	int iCount=0;
 	//Time.get
 	
-	ArrayList a= (ArrayList) Arrays.asList(1,2,3);
+	ArrayList<Integer> a= (ArrayList<Integer>) Arrays.asList(1,2,3);
 	
 //List<Integer> b=a.stream().forEach(i ->{iCount++;});
 	
