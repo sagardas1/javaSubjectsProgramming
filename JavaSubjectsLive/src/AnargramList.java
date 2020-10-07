@@ -21,8 +21,6 @@ public class AnargramList {
 			subList = new ArrayList<String>();
 			for (int j = 0; j < arr.length; j++) {
 
-				
-				
 				if (arr[i].length() == arr[j].length()) {
 
 					count += 1;
@@ -63,11 +61,12 @@ public class AnargramList {
 		return false;
 
 	}
-	int iCount=0;
-	//Time.get
-	
-	ArrayList<Integer> a= (ArrayList<Integer>) Arrays.asList(1,2,3);
-	
+
+	int iCount = 0;
+	// Time.get
+
+	ArrayList<Integer> a = (ArrayList<Integer>) Arrays.asList(1, 2, 3);
+
 //List<Integer> b=a.stream().forEach(i ->{iCount++;});
-	
+
 }
