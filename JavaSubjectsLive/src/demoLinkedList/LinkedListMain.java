@@ -3,6 +3,7 @@ package demoLinkedList;
 class Node {
 	int data;
 	Node next;
+	
 
 }
 
