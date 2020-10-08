@@ -9,6 +9,8 @@ public class Factorisation {
 		while (a != 0) {
 			if (a % 2 == 0) {
 
+
+				
 			}
 		}
 
