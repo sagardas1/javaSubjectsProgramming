@@ -11,7 +11,7 @@ public class FindOutCircular26 {
 					continue;
 				} else {
 					count += 1;
-					
+
 					System.out.println("not");
 					break;
 				}
