@@ -11,6 +11,7 @@ public class CallableClass {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		Callable<String> c = () -> {
 			return "sagar das";
+			
 		};
 
 		ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
