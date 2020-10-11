@@ -10,6 +10,7 @@ public class DummyHashMapSorting {
 
 		Car car1 = new Car();
 		car1.setKm(12);
+		
 		car1.setName("honda");
 		Car car2 = new Car();
 		car2.setKm(15);
