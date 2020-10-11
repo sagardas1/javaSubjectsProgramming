@@ -2,6 +2,7 @@ package clonnable;
 
 public class Student implements Cloneable{
 	
+	
 
 	private String name;
 	private int area;
