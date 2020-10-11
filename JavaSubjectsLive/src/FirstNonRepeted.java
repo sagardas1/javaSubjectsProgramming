@@ -8,6 +8,8 @@ public class FirstNonRepeted {
 		char[] arr = s.toCharArray();
 
 		
+		
+		
 		@SuppressWarnings("unused")
 		int count = 0;
 		int size = s.length();
