@@ -11,6 +11,7 @@ public class FiveTon {
 			obj = new FiveTon();
 
 		}
+		
 		return obj;
 	}
 
