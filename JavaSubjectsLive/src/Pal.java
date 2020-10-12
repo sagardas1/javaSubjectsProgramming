@@ -18,6 +18,7 @@ public class Pal {
 				}
 				
 				
+				
 			}
 		}
 		System.out.println(count);
