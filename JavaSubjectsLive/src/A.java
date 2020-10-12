@@ -9,7 +9,6 @@ public class A {
 		List list = Arrays.asList(a);
 
 	}
-	
 
 	public static void m1(int i) {
 
