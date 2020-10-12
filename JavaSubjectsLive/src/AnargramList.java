@@ -12,6 +12,7 @@ public class AnargramList {
 
 		Set<List<String>> list = new HashSet<>();
 		List<String> subList = null;
+		
 
 		String arr[] = { "ball", "allb", "llab", "fox", "cook", "ookc" };
 
