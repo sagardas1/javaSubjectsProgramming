@@ -18,6 +18,7 @@ public class OddEvrnSegregate {
 		list.add(9);
 		list.add(10);
 		int k = 0;
+		
 		int j = list.size() - 1;
 		ArrayList<Integer> sortedList = new ArrayList<>(list.size());
 		int a[] = new int[list.size()];
