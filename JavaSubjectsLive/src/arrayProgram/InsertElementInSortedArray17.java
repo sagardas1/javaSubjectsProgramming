@@ -15,12 +15,10 @@ public class InsertElementInSortedArray17 {
 			} else {
 				finalArray[c] = a[i];
 				c += 1;
-				
-				
+
 			}
 		}
 
-		
 		for (int i : finalArray) {
 			System.out.print(i + "  ");
 		}
