@@ -13,7 +13,6 @@ public class RemoveAllWhiteSpace {
 				newString += k + "";
 			}
 		}
-		
 
 		System.out.println(newString);
 	}
