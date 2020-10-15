@@ -12,6 +12,7 @@ public class MainMethod {
 
 		System.out.println(new Gson().toJson(a));
 	}
+	
 
 	public static HashSet<Codinates> getNeighbours(int x, int y) {
 		Codinates codinates = null;
