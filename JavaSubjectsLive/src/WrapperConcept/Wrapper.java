@@ -6,6 +6,7 @@ public class Wrapper {
 		Integer a = 127;
 		Integer b = 127;
 
+		
 		if (a == b) {
 
 			System.out.println("equals");
