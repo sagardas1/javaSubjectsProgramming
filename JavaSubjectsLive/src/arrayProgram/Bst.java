@@ -20,6 +20,7 @@ public class Bst {
 
 }
 
+
 class BinarySearch {
 
 	public Node insert(Node root, int i) {
