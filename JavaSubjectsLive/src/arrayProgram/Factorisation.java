@@ -7,6 +7,7 @@ public class Factorisation {
 		@SuppressWarnings("unused")
 		int f = 2;
 		while (a != 0) {
+			
 			if (a % 2 == 0) {
 
 			}
