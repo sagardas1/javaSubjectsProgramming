@@ -14,6 +14,7 @@ public class HashMapSyncronize {
 		map.put("sidharth", 2);
 
 		Map<String, Integer> m = Collections.synchronizedMap(map);
+		
 
 		
 		Set<Map.Entry<String, Integer>> e = m.entrySet();
