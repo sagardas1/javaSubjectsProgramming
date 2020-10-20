@@ -10,7 +10,6 @@ public class FailFastandFailSafe {
 		List<String> a = new ArrayList<String>();
 		a.add("Sagar das");
 		a.add("sidharth das");
-		
 
 		for (@SuppressWarnings("unused")
 		String s : a) {
