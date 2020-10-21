@@ -6,7 +6,6 @@ public class FindMissingRepeating15 {
 	public static void main(String[] args) {
 
 		int a[] = { 4, 3, 6, 2, 1, 1 };
-
 		Arrays.sort(a);
 		int totalCount = 0;
 		for (int i = a[0]; i <= a[a.length - 1]; i++) {
