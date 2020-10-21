@@ -13,7 +13,6 @@ public class MainMethod {
 
 		MyLambda l = (a, b) -> a * b;
 		l.mul(1, 2);
-
 		Employee employee = new Employee();
 		employee.setName("sahaer");
 		employee.setRedge(6);
