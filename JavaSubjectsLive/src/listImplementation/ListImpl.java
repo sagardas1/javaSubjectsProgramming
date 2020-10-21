@@ -11,7 +11,6 @@ public class ListImpl {
 		for (int i = 0; i < 10; i++) {
 			list.add(i);
 		}
-		
 
 		for (Integer i : list) {
 			if (i == 8) {
