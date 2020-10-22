@@ -8,7 +8,7 @@ public class InsertElementInSortedArray17 {
 		int c = 0;
 		for (int i = 0; i < a.length; i++) {
 			if (b < a[i]) {
-				
+
 				finalArray[c] = b;
 				c += 1;
 				finalArray[c] = a[i];
