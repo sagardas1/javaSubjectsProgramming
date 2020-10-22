@@ -2,7 +2,7 @@ package doublyLinkedList;
 
 class Node {
 
-	 int data;
+	int data;
 	Node previous;
 	Node next;
 
