@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 public class A {
 
 	public static void main(String[] args) {
-		
 
 		List<List<Integer>> list = new ArrayList<List<Integer>>();
 		list.add(Arrays.asList(1, 2, 3));
