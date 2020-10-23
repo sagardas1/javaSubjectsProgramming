@@ -5,5 +5,6 @@ public class Casting {
 		@SuppressWarnings("unused")
 		int a = 10;
 		
+		
 	}
 }
