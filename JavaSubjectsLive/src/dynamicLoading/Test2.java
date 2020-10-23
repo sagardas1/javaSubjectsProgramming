@@ -15,6 +15,7 @@ public class Test2 {
 			bike.ride();
 
 			
+			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
