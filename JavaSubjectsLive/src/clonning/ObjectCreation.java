@@ -8,6 +8,8 @@ public class ObjectCreation {
 		employee.setRollNo(13);
 		
 		
+		
+		
 		@SuppressWarnings("unused")
 		Employee employee2 = (Employee) employee.clone();
 	}
