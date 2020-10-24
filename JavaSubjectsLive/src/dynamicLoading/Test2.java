@@ -14,8 +14,6 @@ public class Test2 {
 			Bike bike = (Bike) aClass.newInstance();
 			bike.ride();
 
-			
-			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
