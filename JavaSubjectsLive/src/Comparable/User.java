@@ -3,7 +3,6 @@ package Comparable;
 public class User implements Comparable<User> {
 
 	private String name;
-
 	private int rollNo;
 
 	public String getName() {
