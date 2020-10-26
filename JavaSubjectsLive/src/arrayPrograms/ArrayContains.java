@@ -5,6 +5,7 @@ public class ArrayContains {
 	public static void main(String[] args) {
 		int a[] = { 1, 2, 4, 5, 2 };
 
+		
 		int count = 0;
 		int input = 12;
 
