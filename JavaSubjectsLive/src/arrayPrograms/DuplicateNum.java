@@ -13,6 +13,7 @@ public class DuplicateNum {
 				System.out.println(a[i]);
 			}
 			
+			
 		}
 	}
 }
