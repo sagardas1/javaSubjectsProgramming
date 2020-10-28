@@ -8,4 +8,5 @@ public class Impli implements A, B {
 	}
 
 	
+	
 }
