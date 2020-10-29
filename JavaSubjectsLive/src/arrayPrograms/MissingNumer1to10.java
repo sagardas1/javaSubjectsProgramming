@@ -9,6 +9,7 @@ public class MissingNumer1to10 {
 
 		for (int i = 0; i < 11; i++) {
 			
+			
 			sum += i;
 		}
 		for (int i = 0; i < a.length; i++) {
