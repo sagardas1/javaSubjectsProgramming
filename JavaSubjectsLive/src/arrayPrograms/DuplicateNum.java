@@ -12,8 +12,7 @@ public class DuplicateNum {
 			if (i != a.length - 1 && a[i] == a[i + 1]) {
 				System.out.println(a[i]);
 			}
-			
-			
+
 		}
 	}
 }
