@@ -4,10 +4,10 @@ import java.io.FileNotFoundException;
 
 public class ChildClass extends ParentClass{
 
-	void m1() throws FileNotFoundException{
+	protected void m1() throws FileNotFoundException{
 		
 	}
-	void m6() {
+	public void m6() {
 		System.out.println();
 	}
 }
