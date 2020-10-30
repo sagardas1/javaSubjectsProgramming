@@ -19,6 +19,7 @@ public class FailFastandFailSafe {
 		for (String s : a) {
 			System.out.println(s);
 		}
+		
 
 		List<String> loans = new ArrayList<>();
 		loans.add("personal loan");
