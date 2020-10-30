@@ -1,5 +1,6 @@
 package overRiding;
 
+import java.io.FileNotFoundException;
 import java.nio.file.FileAlreadyExistsException;
 
 import inheritance.Dog;
@@ -10,7 +11,7 @@ public class ParentClass {
 		System.out.println("parentgsdvfhvsh");
 	}
 
-	void m1() throws FileAlreadyExistsException {
+	void m1() throws FileNotFoundException  {
 		System.out.println("m1() parent Class");
 	}
 
@@ -19,7 +20,7 @@ public class ParentClass {
 		return null;
 	}
 
-	void m6() {
+	void m6() throws FileNotFoundException{
 		System.out.println();
 	}
 }

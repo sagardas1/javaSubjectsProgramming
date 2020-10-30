@@ -1,16 +1,13 @@
 package overRiding;
 
-public class ChildClass {
+import java.io.FileNotFoundException;
 
-	public static void main(String[] args) {
-		String x = "a";
-		// Runnable r=()->System.out.println(x);
-		x = "b";
-		// r.run();
-		"b".equals(x);
-		// int d = 20;
-		// String a = d + "".toString();
+public class ChildClass extends ParentClass{
 
+	void m1() throws FileNotFoundException{
+		
 	}
-
+	void m6() {
+		System.out.println();
+	}
 }
