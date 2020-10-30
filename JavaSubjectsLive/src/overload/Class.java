@@ -2,21 +2,15 @@ package overload;
 
 public class Class {
 
-	public static int m1(int a) {
-		return 10 * a;
+	public void m1(Object a) {
+		System.out.println("object");
 	}
 
-	@SuppressWarnings("unused")
-	private static String m1(int a, int b) {
-		return "sagar";
+	public void m1(String a) {
+		System.out.println("String");
 	}
-
-	final char m1(int a, int b, int c) {
-		return 'c';
-	}
-
-	public void main(String[] args) {
-		@SuppressWarnings("unused")
+	public static void main(String[] args) {
 		Class class1 = new Class();
+		class1.m1(null);
 	}
 }
