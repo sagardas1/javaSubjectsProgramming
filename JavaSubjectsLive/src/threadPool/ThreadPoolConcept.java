@@ -18,7 +18,7 @@ public class ThreadPoolConcept {
 			service.execute(count);
 		};
 
-		ExecutorService executorService = Executors.newFixedThreadPool(10);
+		ExecutorService executorService = Executors.newFixedThreadPool(1);
 		for (int i = 0; i < 10; i++) {
 			executorService.execute(r);
 		}
