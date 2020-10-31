@@ -11,6 +11,8 @@ public class QuickSort1 {
 
 	static void sort(int arr[], int left, int right) {
 		int index = partition(arr, left, right);
+		
+		Object o = new Object();
 		if (left < index - 1)
 			partition(arr, left, index - 1);
 
