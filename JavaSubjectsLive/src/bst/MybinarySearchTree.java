@@ -10,6 +10,7 @@ public class MybinarySearchTree {
 			this.key = key;
 			left = right = null;
 		}
+		
 
 	}
 
