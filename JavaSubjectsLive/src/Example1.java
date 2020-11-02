@@ -18,7 +18,7 @@ public static void main(String[] args) {
         if (itr.next() == 2) { 
             // will not throw Exception 
             itr.remove(); 
-            al.add(20);
+          
         } 
     } 
 }
