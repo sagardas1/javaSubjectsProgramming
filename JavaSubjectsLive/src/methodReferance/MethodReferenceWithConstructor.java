@@ -11,6 +11,8 @@ public class MethodReferenceWithConstructor {
 	}
 	
 	
+	
+	
 	public static void main(String[] args) {
 		A s=MethodReferenceWithConstructor::new;
 		s.say();
