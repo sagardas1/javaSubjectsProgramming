@@ -6,6 +6,7 @@ public class Class {
 		System.out.println("object");
 	}
 
+	
 	public void m1(String a) {
 		System.out.println("String");
 	}
