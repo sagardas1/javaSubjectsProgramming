@@ -14,6 +14,7 @@ public class Sortingg {
 				
 				
 				
+				
 			}
 			
 			if(a[i]<smallest) {
