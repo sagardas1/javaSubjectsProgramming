@@ -6,6 +6,8 @@ public class ExceptionExample {
 		ExceptionExample example = new ExceptionExample();
 		example.mi();
 	}
+	
+	
 
 	public void mi() {
 
