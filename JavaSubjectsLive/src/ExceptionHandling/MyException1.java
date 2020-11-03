@@ -8,6 +8,7 @@ public class MyException1 extends Exception {
 		id = x;
 	}
 
+	
 	public String getMessage1() {
 		return "CustomException[" + id + "]";
 	}
