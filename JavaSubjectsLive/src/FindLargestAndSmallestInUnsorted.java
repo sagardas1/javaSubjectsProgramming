@@ -19,6 +19,8 @@ public class FindLargestAndSmallestInUnsorted {
 			}
 
 		}
+		
+		
 
 		
 		System.out.println("smallest number is - " + smallest);
