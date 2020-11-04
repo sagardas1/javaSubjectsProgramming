@@ -19,6 +19,7 @@ public class BstExam {
 
 }
 
+
 class Binary {
 
 	public Node1 insertEle(int i, Node1 root) {
