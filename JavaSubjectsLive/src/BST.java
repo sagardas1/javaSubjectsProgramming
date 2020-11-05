@@ -40,6 +40,7 @@ class BinarySearch {
 			return;
 		}
 
+		
 		inOrder(root.left);
 		System.out.println(root.data);
 		inOrder(root.right);
