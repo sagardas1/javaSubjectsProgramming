@@ -6,8 +6,6 @@ import SortingHashMAPValues.Student;
 
 public class AgeComapretor implements Comparator<Map.Entry<String, Student>> {
 
-	
-	
 	@Override
 	public int compare(Entry<String, Student> o1, Entry<String, Student> o2) {
 
