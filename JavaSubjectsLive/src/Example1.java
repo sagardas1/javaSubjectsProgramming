@@ -1,8 +1,5 @@
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.concurrent.CopyOnWriteArrayList;
-
-import com.google.gson.Gson;
 
 public class Example1 {
 public static void main(String[] args) {
