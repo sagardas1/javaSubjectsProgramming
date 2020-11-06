@@ -18,6 +18,7 @@ public class Anaragram {
 			size=size-(size-s1.length());
 				
 				
+			
 				
 			}
 			if(s1.length()+s2.length()==0) {
