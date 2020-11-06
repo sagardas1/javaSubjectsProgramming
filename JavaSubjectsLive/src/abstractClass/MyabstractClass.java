@@ -5,6 +5,7 @@ public abstract class MyabstractClass {
 	public abstract void getName();
 
 	public String getPassword() {
+		
 		return "Sagardas@123451";
 	}
 
