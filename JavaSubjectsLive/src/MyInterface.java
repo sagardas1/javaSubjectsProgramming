@@ -4,6 +4,7 @@ import java.util.LinkedList;
 public class MyInterface{
 	
 	public static void main(String[] args) {
+		
 	LinkedList<Integer> integers=new LinkedList<>();
 	integers.add(10);
 	integers.add(20);
