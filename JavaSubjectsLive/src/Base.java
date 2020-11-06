@@ -5,6 +5,8 @@ class Derived {
 	}
 }
 
+
+
 public class Base extends Derived {
 
 	public void getDetails(String s) {
