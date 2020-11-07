@@ -15,6 +15,7 @@ public class AnargramList {
 
 		String arr[] = { "ball", "allb", "llab", "fox", "cook", "ookc" };
 
+		
 		int count = 0;
 		for (int i = 0; i < arr.length; i++) {
 			count = 0;
