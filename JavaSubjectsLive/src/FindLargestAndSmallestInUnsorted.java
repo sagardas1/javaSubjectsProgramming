@@ -11,20 +11,14 @@ public class FindLargestAndSmallestInUnsorted {
 			if (a[i] < smallest) {
 				smallest = a[i];
 			}
-			
 
 			if (largest < a[i]) {
 
-				
 				largest = a[i];
 			}
 
 		}
-		
-		
-		
 
-		
 		System.out.println("smallest number is - " + smallest);
 		System.out.println("largest number is - " + largest);
 
