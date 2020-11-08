@@ -16,6 +16,7 @@ public static void main(String[] args) {
             // will not throw Exception 
             itr.remove(); 
           
+            
         } 
     } 
 }
