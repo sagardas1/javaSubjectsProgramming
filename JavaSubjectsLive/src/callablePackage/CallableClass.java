@@ -13,11 +13,6 @@ public class CallableClass {
 			return "sagar das";
 
 		};
-		
-		
-		
-		
-		
 
 		ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 		Future<String> futureObject = executorService.submit(c);
