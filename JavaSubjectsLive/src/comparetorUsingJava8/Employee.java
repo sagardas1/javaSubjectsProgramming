@@ -5,14 +5,11 @@ public class Employee implements Cloneable {
 	private String name;
 	private int rollNo;
 
-	
-	
-
 	public Employee(String name, int rollNo) {
-	
+
 		this.name = name;
 		this.rollNo = rollNo;
-	
+
 	}
 
 	public String getName() {
@@ -36,5 +33,4 @@ public class Employee implements Cloneable {
 		return "Employee [name=" + name + ", rollNo=" + rollNo + "]";
 	}
 
-	
 }
