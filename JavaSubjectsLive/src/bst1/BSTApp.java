@@ -5,6 +5,7 @@ class Node {
 	Node left;
 	int data;
 
+	
 }
 
 public class BSTApp {
