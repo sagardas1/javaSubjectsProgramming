@@ -5,6 +5,8 @@ import java.sql.SQLClientInfoException;
 
 public class A {
 	public void m1() throws FileNotFoundException, SQLClientInfoException {
+		
+		
 	}
 
 }
