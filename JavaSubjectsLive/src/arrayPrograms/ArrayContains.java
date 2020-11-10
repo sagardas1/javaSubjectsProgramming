@@ -7,6 +7,8 @@ public class ArrayContains {
 
 		
 		
+		
+		
 		int count = 0;
 		int input = 12;
 
