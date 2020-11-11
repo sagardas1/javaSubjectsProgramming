@@ -20,6 +20,8 @@ public class MainMethod {
 		user.setName("sq");
 		user.setRollNo(21);
 
+		
+		
 		Student user2 = new Student(null, 0);
 		user2.setName("sqw");
 		user2.setRollNo(200);
