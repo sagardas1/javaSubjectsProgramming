@@ -11,6 +11,8 @@ public class MainMethod {
 	public static void main(String[] args) {
 		HashMap<String, Student> map = new HashMap<>();
 
+		
+		
 		Student e = new Student(null, 0);
 		e.setName("sag");
 		e.setRollNo(27);
