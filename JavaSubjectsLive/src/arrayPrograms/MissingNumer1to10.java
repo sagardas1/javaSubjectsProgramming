@@ -11,6 +11,7 @@ public class MissingNumer1to10 {
 			
 			
 			
+			
 			sum += i;
 		}
 		for (int i = 0; i < a.length; i++) {
