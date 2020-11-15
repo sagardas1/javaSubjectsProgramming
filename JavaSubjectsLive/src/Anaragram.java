@@ -9,6 +9,7 @@ public class Anaragram {
 
 			while (size != 0) {
 				char a = s1.charAt(0);
+				
 
 				s1 = s1.replace(a + "", "");
 
