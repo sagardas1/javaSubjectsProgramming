@@ -46,6 +46,5 @@ public class Dummy {
 
 		}
 
-		System.out.println(new Gson().toJson(finalList));
 	}
 }
