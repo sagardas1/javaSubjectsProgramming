@@ -14,6 +14,8 @@ public class Anaragram {
 
 				s1 = s1.replace(a + "", "");
 
+				
+				
 				s2 = s2.replace(a + "", "");
 				size = size - (size - s1.length());
 
