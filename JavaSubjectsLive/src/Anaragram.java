@@ -7,15 +7,11 @@ public class Anaragram {
 
 		if (s1.length() == s2.length()) {
 
-			
-			
 			while (size != 0) {
 				char a = s1.charAt(0);
 
 				s1 = s1.replace(a + "", "");
 
-				
-				
 				s2 = s2.replace(a + "", "");
 				size = size - (size - s1.length());
 
