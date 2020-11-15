@@ -7,6 +7,8 @@ public class Anaragram {
 
 		if (s1.length() == s2.length()) {
 
+			
+			
 			while (size != 0) {
 				char a = s1.charAt(0);
 
