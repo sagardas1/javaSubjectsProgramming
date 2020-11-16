@@ -18,6 +18,9 @@ public class LongestSubString {
 
 					j += 1;
 
+					
+					
+					
 				}
 
 				if (temp.length() >= longest.length())
