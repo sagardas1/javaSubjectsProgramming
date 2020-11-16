@@ -17,6 +17,8 @@ public static void main(String[] args) {
             itr.remove(); 
           
             
+            
+            
         } 
     } 
 }
