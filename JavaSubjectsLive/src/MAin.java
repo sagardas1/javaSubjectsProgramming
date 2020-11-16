@@ -3,7 +3,6 @@ public class MAin {
 
 	public static void main(String[] args) {
 		m1(null);
-
 	}
 
 	@SuppressWarnings("unused")
