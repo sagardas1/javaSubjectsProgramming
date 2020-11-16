@@ -13,6 +13,8 @@ public static void main(String[] args) {
 	
 	while(itr.hasNext()) {
 		System.out.println(itr.next());
+		
+		
 		itr.set(0);
 		
 	}
