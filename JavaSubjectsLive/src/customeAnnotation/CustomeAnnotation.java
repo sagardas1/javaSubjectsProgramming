@@ -21,6 +21,7 @@ import java.lang.annotation.Target;
 
 
 
+
 @smartPhone(os = "IOS", version = 89)
 public class CustomeAnnotation {
 	String brand;
