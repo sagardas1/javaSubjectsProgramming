@@ -17,6 +17,7 @@ public class Singleton {
 
 	public static void main(String[] args) {
 		Thread thread=new Thread();
+		
 	
 		Singleton a = Singleton.getInstaSingleton();
 		Singleton b = Singleton.getInstaSingleton();
