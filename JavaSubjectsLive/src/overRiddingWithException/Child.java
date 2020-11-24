@@ -7,6 +7,7 @@ public class Child extends Parent {
 	public void m1() throws FileNotFoundException {
 		
 		System.out.println("this is in child class ");
+		
 
 	}
 
